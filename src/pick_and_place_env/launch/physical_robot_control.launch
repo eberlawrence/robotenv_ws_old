@@ -1,0 +1,18 @@
+<launch>
+    <rosparam command="load" file="$(find abb_irb1200_support)/config/joint_names_irb1200_5_90.yaml" />
+    <arg name="robot_ip" default="192.168.23.6" doc="IP of controller (only required if not using industrial simulator)" />
+    <include file="$(find pick_and_place_env)/launch/planning_context.launch" >
+        <arg name="load_robot_description" value="true" />
+    </include>
+    <include file="$(find abb_irb1200_support)/launch/robot_interface_download_irb1200_5_90.launch" >
+        <arg name="robot_ip" value="$(arg robot_ip)"/>
+    </include>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <include file="$(find abb_irb1200_moveit_config)/launch/move_group.launch">
+        <arg name="publish_monitored_planning_scene" value="true" />
+    </include>
+    <include file="$(find phoxi_camera)/launch/phoxi_camera.launch"/>
+    <include file="$(find abb_irb1200_moveit_config)/launch/moveit_rviz.launch">
+        <arg name="config" value="true"/>
+    </include>
+</launch>
