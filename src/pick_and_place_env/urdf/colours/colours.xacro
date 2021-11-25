@@ -16,6 +16,11 @@
       <color rgba="${c_green}"/>
     </material>
   </xacro:macro>
+  <xacro:macro name="colour_dark_green">
+    <material name="">
+      <color rgba="${c_dark_green}"/>
+    </material>
+  </xacro:macro>
   <xacro:macro name="colour_light_blue">
     <material name="">
       <color rgba="${c_light_blue}"/>

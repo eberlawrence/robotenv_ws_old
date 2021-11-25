@@ -1,6 +1,6 @@
 Panels:
   - Class: rviz/Displays
-    Help Height: 84
+    Help Height: 0
     Name: Displays
     Property Tree Widget:
       Expanded:
@@ -8,8 +8,9 @@ Panels:
         - /MotionPlanning1
         - /MotionPlanning1/Scene Robot1
         - /MotionPlanning1/Planning Request1
+        - /PointCloud21
       Splitter Ratio: 0.5170649886131287
-    Tree Height: 186
+    Tree Height: 416
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -100,6 +101,16 @@ Visualization Manager:
             Show Trail: false
             Value: true
           camera_support:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          conveyor_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          conveyor_belt:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -216,6 +227,16 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          conveyor_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          conveyor_belt:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           flange:
             Alpha: 1
             Show Axes: false
@@ -255,10 +276,38 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
         Robot Alpha: 1
-        Show Robot Collision: true
+        Show Robot Collision: false
         Show Robot Visual: true
       Value: true
       Velocity_Scaling_Factor: 0.1
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.009999999776482582
+      Style: Boxes
+      Topic: /phoxi_camera/pointcloud
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -275,7 +324,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.818410634994507
+      Distance: 1.5297820568084717
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -283,22 +332,22 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.07723015546798706
-        Y: -0.3582274615764618
-        Z: 1.6391305734941852e-07
+        X: 2.6536788940429688
+        Y: -0.1499192714691162
+        Z: 3.9176296695586643e-07
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.18479713797569275
+      Pitch: 0.10479838401079178
       Target Frame: base_link
-      Yaw: 0.9817686080932617
+      Yaw: 5.89363431930542
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 961
+  Height: 965
   Help:
     collapsed: false
   Hide Left Dock: false
@@ -307,9 +356,9 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd00000001000000000000026a00000367fc0200000008fb000000100044006900730070006c006100790073010000003d0000014b000000c900fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a0056006900650077007300000003b0000000b0000000a400fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000020f000001d60000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000018e000002160000017d00fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016000004200000036700000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002fb0000036bfc0200000008fb000000100044006900730070006c006100790073010000003d000001dd000000c900fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a0056006900650077007300000003b0000000b0000000a400fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000020f000001d60000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000220000001880000017d00fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff00000016000000160000047f0000036b00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1680
+  Width: 1920
   X: 0
-  Y: 30
+  Y: 27

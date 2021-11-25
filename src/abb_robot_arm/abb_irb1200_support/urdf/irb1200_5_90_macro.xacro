@@ -52,7 +52,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_1.dae"/>
         </geometry>
-         <xacro:colour_orange />
+        <xacro:colour_orange />
       </visual>
     </link>
     <link name="${prefix}link_2">
@@ -71,7 +71,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_2.dae"/>
         </geometry>
-         <xacro:colour_orange />
+        <xacro:colour_orange />
       </visual>
     </link>
     <link name="${prefix}link_3">
@@ -90,7 +90,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_3.dae"/>
         </geometry>
-         <xacro:colour_orange />
+        <xacro:colour_orange />
       </visual>
     </link>
     <link name="${prefix}link_4">
@@ -109,7 +109,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_4.dae"/>
         </geometry>
-         <xacro:colour_orange />
+        <xacro:colour_orange />
       </visual>
     </link>
     <link name="${prefix}link_5">
@@ -128,7 +128,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_5.dae"/>
         </geometry>
-         <xacro:colour_orange />
+        <xacro:colour_orange />
       </visual>
     </link>
     <link name="${prefix}link_6">
@@ -147,13 +147,115 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_6.dae"/>
         </geometry>
-         <xacro:colour_orange />
+        <xacro:colour_orange />
       </visual>
     </link>
+
+    
+    <!-- <link name="${prefix}flange_1">
+      See note 1 in package.xml about the inertial and mass values
+      <inertial>
+        <mass value="0.137"/>
+        <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/flange_1.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/flange_1.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:colour_orange />
+      </visual>
+    </link>
+    <link name="${prefix}flange_2">
+      See note 1 in package.xml about the inertial and mass values
+      <inertial>
+        <mass value="0.137"/>
+        <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/flange_2.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/flange_2.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:colour_orange />
+      </visual>
+    </link>
+    <link name="${prefix}tool_base">
+      See note 1 in package.xml about the inertial and mass values
+      <inertial>
+        <mass value="0.137"/>
+        <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/tool_base.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/tool_base.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:colour_dark_green />
+      </visual>
+    </link>
+    <link name="${prefix}l_finger">
+      See note 1 in package.xml about the inertial and mass values
+      <inertial>
+        <mass value="0.137"/>
+        <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/l_finger.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/l_finger.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:colour_gray_60p />
+      </visual>
+    </link>
+    <link name="${prefix}r_finger">
+      See note 1 in package.xml about the inertial and mass values
+      <inertial>
+        <mass value="0.137"/>
+        <origin xyz="3 3 3" rpy="0 0 0"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/r_finger.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/r_finger.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:colour_gray_60p />
+      </visual>
+    </link> -->
+
+
+
     <!-- end of link list -->
     <!--  -->
     <!--  -->
     <!-- joint list -->
+
+
     <joint type="fixed" name="${prefix}base_link">
       <origin xyz="0.275 0.275 0.726" rpy="0 0 0"/>
       <axis xyz="0 0 0"/>
@@ -215,19 +317,50 @@
       <dynamics damping="1.0" friction="1.0"/>
     </joint>
     <!-- end of joint list -->
-    <!-- ROS-Industrial 'base' frame: base_link to ABB World Coordinates transform -->
     <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
-    <link name="${prefix}flange"/>
-    <joint type="fixed" name="${prefix}joint_6-flange">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+
+<!-- 
+    <joint type="fixed" name="${prefix}flange_1">
+      <origin xyz="0 -0.02 0.02" rpy="0 ${pi/2} 0"/>
       <parent link="${prefix}link_6"/>
-      <child link="${prefix}flange"/>
+      <child link="${prefix}flange_1"/>
     </joint>
+    <joint type="fixed" name="${prefix}flange_2">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}flange_1"/>
+      <child link="${prefix}flange_2"/>
+    </joint>
+    <joint type="fixed" name="${prefix}tool_base">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}flange_2"/>
+      <child link="${prefix}tool_base"/>
+    </joint>
+    <joint type="revolute" name="${prefix}l_finger">
+      <calibration rising="10"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}tool_base"/>
+      <child link="${prefix}l_finger"/>
+      <axis xyz="1 0 0" />
+      <dynamics damping="1.0" friction="1.0"/>
+      <limit effort="1000" lower="0" upper="1" velocity="10.472"/>
+    </joint>
+    <joint type="revolute" name="${prefix}r_finger">
+      <calibration rising="10"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}tool_base"/>
+      <child link="${prefix}r_finger"/>
+      <axis xyz="1 0 0" />
+      <dynamics damping="1.0" friction="1.0"/>
+      <limit effort="1000" lower="0" upper="1" velocity="10.472"/>
+    </joint>
+ -->
+
+
     <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
     <link name="${prefix}tool0" />
     <joint name="${prefix}link_6-tool0" type="fixed">
       <origin xyz="0 0 0" rpy="0 ${radians(90)} 0" />
-      <parent link="${prefix}flange" />
+      <parent link="${prefix}link_6" />
       <child link="${prefix}tool0" />
     </joint>
   </xacro:macro>

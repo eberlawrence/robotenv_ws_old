@@ -3,13 +3,28 @@
   <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
   <xacro:macro name = "Conveyor_belt">
     <!-- link list -->
+    <link name="conveyor_base">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/conveyor_base.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:colour_gray_30p/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/conveyor_base.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
     <link name="conveyor_belt">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/conveyor_belt.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <xacro:colour_gray_50p/>
+        <xacro:colour_gray_90p/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -22,10 +37,16 @@
     <!--  -->
     <!--  -->
     <!-- joint list -->
-    <joint name="base_to_conveyor_belt_joint" type="fixed">
-      <origin xyz="0.7 1 0.75" rpy="${pi/2} 0 ${pi/2}"/>
+    <joint name="base_to_conveyor_base_joint" type="fixed">
+      <origin xyz="0.77 1.295 0" rpy="0 0 ${-pi/2}"/>
       <axis xyz="0 0 1"/>
       <parent link="base"/>
+      <child link="conveyor_base"/>
+    </joint>
+    <joint name="conveyor_base_to_conveyor_belt_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="conveyor_base"/>
       <child link="conveyor_belt"/>
     </joint>
     <!-- end of joint list -->

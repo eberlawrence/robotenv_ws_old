@@ -21,4 +21,5 @@
   <xacro:property name="c_gray_70p"     value="0.7 0.7 0.7 1" />
   <xacro:property name="c_gray_80p"     value="0.8 0.8 0.8 1" />
   <xacro:property name="c_gray_90p"     value="0.9 0.9 0.9 1" />
+  <xacro:property name="c_dark_green"     value="0 0.5 0 1" />
 </robot>
