@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
+  <xacro:macro name = "PhoXi3Dscanner" params ="scanner_parent scanner_name *scanner_origin sensor_parent sensor_name *sensor_origin *visual *collision">
+    <!-- link list -->
+    <link name="camera_stand">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_stand.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:colour_gray_50p/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_stand.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="camera_support">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_support.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:colour_gray_10p/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_support.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="${scanner_name}">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 1.5707 0" />
+        <geometry>
+          <xacro:insert_block name="visual" />
+        </geometry>
+        <xacro:colour_gray_30p/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 1.5707 0" />
+        <geometry>
+          <xacro:insert_block name="collision" />
+        </geometry>
+      </collision>
+    </link>
+    <link name="${sensor_name}"/>
+    <!-- end of link list -->
+    <!--  -->
+    <!--  -->
+    <!-- joint list -->
+    <joint name="base_to_camera_stand_joint" type="fixed">
+      <origin xyz="1.535 1.02 0" rpy="0 0 ${pi}"/>
+      <axis xyz="0 0 1"/>
+      <parent link="base"/>
+      <child link="camera_stand"/>
+    </joint>
+    <joint name="camera_stand_to_camera_support_joint" type="fixed">
+      <origin xyz="0.515 0.145 1.202" rpy="0 0 ${pi}"/>
+      <axis xyz="0 0 1"/>
+      <parent link="camera_stand"/>
+      <child link="camera_support"/>
+    </joint>
+    <joint name="camera_support_to_${scanner_name}_joint" type="fixed">
+      <origin xyz="0 0.04 0.02" rpy="${pi} 0 ${-pi/2}"/>
+      <axis xyz="0 0 1"/>
+      <parent link="camera_support"/>
+      <child link="${scanner_name}"/>
+    </joint>
+    <joint name="${sensor_parent}_to_${sensor_name}_joint" type="fixed">
+      <parent link="${sensor_parent}"/>
+      <child link="${sensor_name}"/>
+      <xacro:insert_block name="sensor_origin" />
+    </joint>
+    <!-- end of joint list -->
+  </xacro:macro>
+</robot>
