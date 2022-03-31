@@ -319,8 +319,8 @@
     <!-- end of joint list -->
     <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
 
-<!-- 
-    <joint type="fixed" name="${prefix}flange_1">
+
+    <!-- <joint type="fixed" name="${prefix}flange_1">
       <origin xyz="0 -0.02 0.02" rpy="0 ${pi/2} 0"/>
       <parent link="${prefix}link_6"/>
       <child link="${prefix}flange_1"/>
