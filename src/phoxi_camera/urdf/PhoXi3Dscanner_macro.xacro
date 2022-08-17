@@ -9,7 +9,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_stand.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <xacro:colour_gray_50p/>
+        <xacro:colour_gray_70p/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
@@ -24,7 +24,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_support.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <xacro:colour_gray_10p/>
+        <xacro:colour_gray_50p/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />

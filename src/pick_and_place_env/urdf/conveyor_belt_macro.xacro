@@ -7,14 +7,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/conveyor_base.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Base.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
         <xacro:colour_gray_30p/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/conveyor_base.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Base.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
@@ -22,14 +22,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/conveyor_belt.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Belt.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <xacro:colour_gray_90p/>
+        <xacro:colour_white/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/conveyor_belt.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Belt.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>

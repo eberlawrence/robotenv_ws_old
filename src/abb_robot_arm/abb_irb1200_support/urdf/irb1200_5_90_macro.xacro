@@ -151,8 +151,8 @@
       </visual>
     </link>
 
-    
-    <!-- <link name="${prefix}flange_1">
+<!--     
+    <link name="${prefix}flange_1">
       See note 1 in package.xml about the inertial and mass values
       <inertial>
         <mass value="0.137"/>
@@ -161,12 +161,12 @@
       </inertial>
       <collision name="collision">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/flange_1.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/Common_Flange.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/flange_1.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/Common_Flange.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
         <xacro:colour_orange />
       </visual>
@@ -180,14 +180,14 @@
       </inertial>
       <collision name="collision">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/flange_2.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Flange.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/flange_2.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Flange.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <xacro:colour_orange />
+        <xacro:colour_white />
       </visual>
     </link>
     <link name="${prefix}tool_base">
@@ -199,14 +199,14 @@
       </inertial>
       <collision name="collision">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/tool_base.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Base.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/tool_base.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Base.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <xacro:colour_dark_green />
+        <xacro:colour_gray_20p />
       </visual>
     </link>
     <link name="${prefix}l_finger">
@@ -218,14 +218,14 @@
       </inertial>
       <collision name="collision">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/l_finger.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Left.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/l_finger.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Left.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <xacro:colour_gray_60p />
+        <xacro:colour_gray_40p />
       </visual>
     </link>
     <link name="${prefix}r_finger">
@@ -237,14 +237,14 @@
       </inertial>
       <collision name="collision">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/r_finger.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Right.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/r_finger.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Right.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <xacro:colour_gray_60p />
+        <xacro:colour_gray_40p />
       </visual>
     </link> -->
 
@@ -352,8 +352,8 @@
       <axis xyz="1 0 0" />
       <dynamics damping="1.0" friction="1.0"/>
       <limit effort="1000" lower="0" upper="1" velocity="10.472"/>
-    </joint>
- -->
+    </joint> -->
+
 
 
     <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
