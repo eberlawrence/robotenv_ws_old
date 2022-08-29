@@ -3,7 +3,10 @@
   <xacro:include filename="$(find abb_resources)/urdf/common_materials.xacro"/>
   <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
   <xacro:macro name="abb_irb1200_5_90" params="prefix">
-    <!-- link list -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- Robotic arm link list -->
     <link name="${prefix}base">
       <collision name="collision">
         <geometry>
@@ -18,7 +21,6 @@
       </visual>
     </link>
     <link name="${prefix}base_link">
-      <!-- See note 1 in package.xml about the inertial and mass values -->
       <inertial>
         <mass value="13.7742"/>
         <origin xyz="-0.028986 0.000596 0.11273"/>
@@ -37,7 +39,6 @@
       </visual>
     </link>
     <link name="${prefix}link_1">
-      <!-- See note 1 in package.xml about the inertial and mass values -->
       <inertial>
         <mass value="11.8419"/>
         <origin xyz="0.000877 -0.000631 -0.062883"/>
@@ -56,7 +57,6 @@
       </visual>
     </link>
     <link name="${prefix}link_2">
-      <!-- See note 1 in package.xml about the inertial and mass values -->
       <inertial>
         <mass value="17.5394"/>
         <origin xyz="-0.000928 -0.000497 0.250051"/>
@@ -75,7 +75,6 @@
       </visual>
     </link>
     <link name="${prefix}link_3">
-      <!-- See note 1 in package.xml about the inertial and mass values -->
       <inertial>
         <mass value="7.46365"/>
         <origin xyz="0.099588 0.001143 0.032333"/>
@@ -94,7 +93,6 @@
       </visual>
     </link>
     <link name="${prefix}link_4">
-      <!-- See note 1 in package.xml about the inertial and mass values -->
       <inertial>
         <mass value="2.74436"/>
         <origin xyz="0.381678 0.001261 0.005168"/>
@@ -113,7 +111,6 @@
       </visual>
     </link>
     <link name="${prefix}link_5">
-      <!-- See note 1 in package.xml about the inertial and mass values -->
       <inertial>
         <mass value="0.62953"/>
         <origin xyz="0.011197 -0.001056 0.000109"/>
@@ -132,7 +129,6 @@
       </visual>
     </link>
     <link name="${prefix}link_6">
-      <!-- See note 1 in package.xml about the inertial and mass values -->
       <inertial>
         <mass value="0.137"/>
         <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
@@ -150,10 +146,12 @@
         <xacro:colour_orange />
       </visual>
     </link>
-
-<!--     
-    <link name="${prefix}flange_1">
-      See note 1 in package.xml about the inertial and mass values
+    <!-- End of robotic arm link list -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- Gripper link list -->
+    <link name="${prefix}link_flange_1">
       <inertial>
         <mass value="0.137"/>
         <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
@@ -171,8 +169,7 @@
         <xacro:colour_orange />
       </visual>
     </link>
-    <link name="${prefix}flange_2">
-      See note 1 in package.xml about the inertial and mass values
+    <link name="${prefix}link_flange_2">
       <inertial>
         <mass value="0.137"/>
         <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
@@ -190,8 +187,7 @@
         <xacro:colour_white />
       </visual>
     </link>
-    <link name="${prefix}tool_base">
-      See note 1 in package.xml about the inertial and mass values
+    <link name="${prefix}link_tool_base">
       <inertial>
         <mass value="0.137"/>
         <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
@@ -209,8 +205,7 @@
         <xacro:colour_gray_20p />
       </visual>
     </link>
-    <link name="${prefix}l_finger">
-      See note 1 in package.xml about the inertial and mass values
+    <link name="${prefix}link_l_finger">
       <inertial>
         <mass value="0.137"/>
         <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
@@ -228,8 +223,7 @@
         <xacro:colour_gray_40p />
       </visual>
     </link>
-    <link name="${prefix}r_finger">
-      See note 1 in package.xml about the inertial and mass values
+    <link name="${prefix}link_r_finger">
       <inertial>
         <mass value="0.137"/>
         <origin xyz="3 3 3" rpy="0 0 0"/>
@@ -246,16 +240,12 @@
         </geometry>
         <xacro:colour_gray_40p />
       </visual>
-    </link> -->
-
-
-
-    <!-- end of link list -->
+    </link>
+    <!-- End of gripper link list -->
     <!--  -->
     <!--  -->
-    <!-- joint list -->
-
-
+    <!--  -->
+    <!-- Robotic arm joint list -->
     <joint type="fixed" name="${prefix}base_link">
       <origin xyz="0.275 0.275 0.726" rpy="0 0 0"/>
       <axis xyz="0 0 0"/>
@@ -267,7 +257,6 @@
       <axis xyz="0 0 1"/>
       <parent link="${prefix}base_link"/>
       <child link="${prefix}link_1"/>
-      <!-- See note 2 in package.xml about effort limits and dynamics values -->
       <limit effort="1000" lower="-2.967" upper="2.967" velocity="5.027"/>
       <dynamics damping="50.0" friction="1.0"/>
     </joint>
@@ -276,7 +265,6 @@
       <axis xyz="0 1 0"/>
       <parent link="${prefix}link_1"/>
       <child link="${prefix}link_2"/>
-      <!-- See note 2 in package.xml about effort limits and dynamics values -->
       <limit effort="1000" lower="-1.745" upper="2.269" velocity="4.189"/>
       <dynamics damping="50.0" friction="1.0"/>
     </joint>
@@ -285,7 +273,6 @@
       <axis xyz="0 1 0"/>
       <parent link="${prefix}link_2"/>
       <child link="${prefix}link_3"/>
-      <!-- See note 2 in package.xml about effort limits and dynamics values -->
       <limit effort="1000" lower="-3.491" upper="1.222" velocity="5.236"/>
       <dynamics damping="10.0" friction="1.0"/>
     </joint>
@@ -294,7 +281,6 @@
       <axis xyz="1 0 0"/>
       <parent link="${prefix}link_3"/>
       <child link="${prefix}link_4"/>
-      <!-- See note 2 in package.xml about effort limits and dynamics values -->
       <limit effort="1000" lower="-4.712" upper="4.712" velocity="6.981"/>
       <dynamics damping="5.0" friction="1.0"/>
     </joint>
@@ -303,7 +289,6 @@
       <axis xyz="0 1 0"/>
       <parent link="${prefix}link_4"/>
       <child link="${prefix}link_5"/>
-      <!-- See note 2 in package.xml about effort limits and dynamics values -->
       <limit effort="1000" lower="-2.269" upper="2.269" velocity="7.069"/>
       <dynamics damping="2.0" friction="1.0"/>
     </joint>
@@ -312,56 +297,47 @@
       <axis xyz="1 0 0"/>
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
-      <!-- See note 2 in package.xml about effort limits and dynamics values -->
       <limit effort="1000" lower="-6.283" upper="6.283" velocity="10.472"/>
       <dynamics damping="1.0" friction="1.0"/>
     </joint>
-    <!-- end of joint list -->
-    <!-- ROS-Industrial 'flange' frame: attachment point for EEF models -->
-
-
-    <!-- <joint type="fixed" name="${prefix}flange_1">
+    <!-- End of robotic arm joint list -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- Gripper joint list -->
+    <joint type="fixed" name="${prefix}joint_flange_1">
       <origin xyz="0 -0.02 0.02" rpy="0 ${pi/2} 0"/>
       <parent link="${prefix}link_6"/>
-      <child link="${prefix}flange_1"/>
+      <child link="${prefix}link_flange_1"/>
     </joint>
-    <joint type="fixed" name="${prefix}flange_2">
+    <joint type="fixed" name="${prefix}joint_flange_2">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}flange_1"/>
-      <child link="${prefix}flange_2"/>
+      <parent link="${prefix}link_flange_1"/>
+      <child link="${prefix}link_flange_2"/>
     </joint>
-    <joint type="fixed" name="${prefix}tool_base">
+    <joint type="fixed" name="${prefix}joint_tool_base">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}flange_2"/>
-      <child link="${prefix}tool_base"/>
+      <parent link="${prefix}link_flange_2"/>
+      <child link="${prefix}link_tool_base"/>
     </joint>
-    <joint type="revolute" name="${prefix}l_finger">
+    <joint type="revolute" name="${prefix}joint_l_finger">
       <calibration rising="10"/>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}tool_base"/>
-      <child link="${prefix}l_finger"/>
-      <axis xyz="1 0 0" />
+      <parent link="${prefix}link_tool_base"/>
+      <child link="${prefix}link_l_finger"/>
+      <axis xyz="0 1 0" />
       <dynamics damping="1.0" friction="1.0"/>
       <limit effort="1000" lower="0" upper="1" velocity="10.472"/>
     </joint>
-    <joint type="revolute" name="${prefix}r_finger">
+    <joint type="revolute" name="${prefix}joint_r_finger">
       <calibration rising="10"/>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}tool_base"/>
-      <child link="${prefix}r_finger"/>
-      <axis xyz="1 0 0" />
+      <parent link="${prefix}link_tool_base"/>
+      <child link="${prefix}link_r_finger"/>
+      <axis xyz="0 -1 0" />
       <dynamics damping="1.0" friction="1.0"/>
       <limit effort="1000" lower="0" upper="1" velocity="10.472"/>
-    </joint> -->
-
-
-
-    <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
-    <link name="${prefix}tool0" />
-    <joint name="${prefix}link_6-tool0" type="fixed">
-      <origin xyz="0 0 0" rpy="0 ${radians(90)} 0" />
-      <parent link="${prefix}link_6" />
-      <child link="${prefix}tool0" />
     </joint>
+    <!-- End of gripper joint list -->
   </xacro:macro>
 </robot>
