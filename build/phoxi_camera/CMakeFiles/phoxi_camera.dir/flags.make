@@ -6,5 +6,5 @@ CXX_FLAGS =   -w -std=c++11 -fpermissive -pthread -O2 -std=gnu++14
 
 CXX_DEFINES = -DPHOXI_API_VERSION_MAJOR=1 -DPHOXI_API_VERSION_MINOR=4 -DPHOXI_API_VERSION_PATCH=1 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"phoxi_camera\"
 
-CXX_INCLUDES = -I/home/user/Projects/robotenv_ws/src/phoxi_camera/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/pcl-1.10 -I/usr/include/vtk-7.1 -I/usr/include/freetype2 -I/usr/include/opencv4 -I/opt/Photoneo/PhoXiControl-1.4.1/API/include -isystem /home/user/Projects/robotenv_ws/devel/include -isystem /home/user/Projects/robotenv_ws/src/phoxi_camera/BEFORE 
+CXX_INCLUDES = -I/home/user/Projects/robotenv_ws/devel/include -I/home/user/Projects/robotenv_ws/src/phoxi_camera/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/pcl-1.10 -I/usr/include/vtk-7.1 -I/usr/include/freetype2 -I/usr/include/opencv4 -I/opt/Photoneo/PhoXiControl-1.4.1/API/include 
 

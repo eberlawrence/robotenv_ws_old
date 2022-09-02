@@ -2,342 +2,221 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:include filename="$(find abb_resources)/urdf/common_materials.xacro"/>
   <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
-  <xacro:macro name="abb_irb1200_5_90" params="prefix">
+  <xacro:macro name="abb_irb1200_5_90">
     <!--  -->
     <!--  -->
     <!--  -->
     <!-- Robotic arm link list -->
-    <link name="${prefix}base">
-      <collision name="collision">
-        <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/robot_stand.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-      </collision>
+    <!-- BASE -->
+    <link name="base">
       <visual name="visual">
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/robot_stand.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
         <xacro:colour_gray_50p/>
       </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/robot_stand.stl" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
     </link>
-    <link name="${prefix}base_link">
-      <inertial>
-        <mass value="13.7742"/>
-        <origin xyz="-0.028986 0.000596 0.11273"/>
-        <inertia ixx="0.101998" ixy="0.000495482" ixz="0.000311158" iyy="0.13969" iyz="-0.000245375" izz="0.130433"/>
-      </inertial>
+    <!-- BASE_LINK -->
+    <link name="base_link">
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/base_link.dae"/>
+        </geometry>
+      </visual>
       <collision name="collision">
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/collision/base_link.stl"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="13.7742"/>
+        <origin xyz="-0.028986 0.000596 0.11273"/>
+        <inertia ixx="0.101998" ixy="0.000495482" ixz="0.000311158" iyy="0.13969" iyz="-0.000245375" izz="0.130433"/>
+      </inertial>
+    </link>
+    <!-- LINK 1 -->
+    <link name="link_1">
       <visual name="visual">
-        <xacro:colour_orange />
         <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/base_link.dae"/>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_1.dae"/>
         </geometry>
       </visual>
-    </link>
-    <link name="${prefix}link_1">
+      <collision>
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/collision/link_1.stl"/>
+        </geometry>
+      </collision>
       <inertial>
         <mass value="11.8419"/>
         <origin xyz="0.000877 -0.000631 -0.062883"/>
         <inertia ixx="0.11194" ixy="-4.54988e-05" ixz="0.000280961" iyy="0.0915159" iyz="-0.000109905" izz="0.0876456"/>
       </inertial>
-      <collision name="collision">
-        <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/collision/link_1.stl"/>
-        </geometry>
-      </collision>
+    </link>
+    <!-- LINK 2 -->
+    <link name="link_2">
       <visual name="visual">
         <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_1.dae"/>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_2.dae"/>
         </geometry>
-        <xacro:colour_orange />
       </visual>
-    </link>
-    <link name="${prefix}link_2">
-      <inertial>
-        <mass value="17.5394"/>
-        <origin xyz="-0.000928 -0.000497 0.250051"/>
-        <inertia ixx="0.493558" ixy="1.32136e-05" ixz="0.000209024" iyy="0.462939" iyz="-0.00179901" izz="0.0894214"/>
-      </inertial>
       <collision name="collision">
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/collision/link_2.stl"/>
         </geometry>
       </collision>
-      <visual name="visual">
-        <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_2.dae"/>
-        </geometry>
-        <xacro:colour_orange />
-      </visual>
-    </link>
-    <link name="${prefix}link_3">
       <inertial>
-        <mass value="7.46365"/>
-        <origin xyz="0.099588 0.001143 0.032333"/>
-        <inertia ixx="0.0252424" ixy="0.000142737" ixz="-0.00565542" iyy="0.0906438" iyz="0.000142213" izz="0.0825079"/>
+        <mass value="17.5394"/>
+        <origin xyz="-0.000928 -0.000497 0.250051"/>
+        <inertia ixx="0.493558" ixy="1.32136e-05" ixz="0.000209024" iyy="0.462939" iyz="-0.00179901" izz="0.0894214"/>
       </inertial>
-      <collision name="collision">
-        <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/collision/link_3.stl"/>
-        </geometry>
-      </collision>
+    </link>
+    <!-- LINK 3 -->
+    <link name="link_3">
       <visual name="visual">
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_3.dae"/>
         </geometry>
         <xacro:colour_orange />
       </visual>
-    </link>
-    <link name="${prefix}link_4">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/collision/link_3.stl"/>
+        </geometry>
+      </collision>
       <inertial>
-        <mass value="2.74436"/>
-        <origin xyz="0.381678 0.001261 0.005168"/>
-        <inertia ixx="0.00573099" ixy="-0.000131119" ixz="0.000380232" iyy="0.0118352" iyz="-2.26565e-05" izz="0.0114428"/>
+        <mass value="7.46365"/>
+        <origin xyz="0.099588 0.001143 0.032333"/>
+        <inertia ixx="0.0252424" ixy="0.000142737" ixz="-0.00565542" iyy="0.0906438" iyz="0.000142213" izz="0.0825079"/>
       </inertial>
+    </link>
+    <!-- LINK 4 -->
+    <link name="link_4">
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_4.dae"/>
+        </geometry>
+      </visual>
       <collision name="collision">
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/collision/link_4.stl"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="2.74436"/>
+        <origin xyz="0.381678 0.001261 0.005168"/>
+        <inertia ixx="0.00573099" ixy="-0.000131119" ixz="0.000380232" iyy="0.0118352" iyz="-2.26565e-05" izz="0.0114428"/>
+      </inertial>
+    </link>
+    <!-- LINK 5 -->
+    <link name="link_5">
       <visual name="visual">
         <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_4.dae"/>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_5.dae"/>
         </geometry>
-        <xacro:colour_orange />
       </visual>
-    </link>
-    <link name="${prefix}link_5">
-      <inertial>
-        <mass value="0.62953"/>
-        <origin xyz="0.011197 -0.001056 0.000109"/>
-        <inertia ixx="0.000502815" ixy="-1.03173e-05" ixz="-8.74347e-08" iyy="0.00108856" iyz="2.07657e-07" izz="0.000918873"/>
-      </inertial>
       <collision name="collision">
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/collision/link_5.stl"/>
         </geometry>
       </collision>
+      <inertial>
+        <mass value="0.62953"/>
+        <origin xyz="0.011197 -0.001056 0.000109"/>
+        <inertia ixx="0.000502815" ixy="-1.03173e-05" ixz="-8.74347e-08" iyy="0.00108856" iyz="2.07657e-07" izz="0.000918873"/>
+      </inertial>
+    </link>
+    <!-- LINK 6 -->
+    <link name="link_6">
       <visual name="visual">
         <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_5.dae"/>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_6.dae"/>
         </geometry>
-        <xacro:colour_orange />
       </visual>
-    </link>
-    <link name="${prefix}link_6">
-      <inertial>
-        <mass value="0.137"/>
-        <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
-        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-      </inertial>
       <collision name="collision">
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/collision/link_6.stl"/>
         </geometry>
       </collision>
-      <visual name="visual">
-        <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_6.dae"/>
-        </geometry>
-        <xacro:colour_orange />
-      </visual>
+      <inertial>
+        <mass value="0.137"/>
+        <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
     </link>
     <!-- End of robotic arm link list -->
     <!--  -->
     <!--  -->
     <!--  -->
-    <!-- Gripper link list -->
-    <link name="${prefix}link_flange_1">
-      <inertial>
-        <mass value="0.137"/>
-        <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
-        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-      </inertial>
-      <collision name="collision">
-        <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/Common_Flange.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-      </collision>
-      <visual name="visual">
-        <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/Common_Flange.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-        <xacro:colour_orange />
-      </visual>
-    </link>
-    <link name="${prefix}link_flange_2">
-      <inertial>
-        <mass value="0.137"/>
-        <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
-        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-      </inertial>
-      <collision name="collision">
-        <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Flange.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-      </collision>
-      <visual name="visual">
-        <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Flange.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-        <xacro:colour_white />
-      </visual>
-    </link>
-    <link name="${prefix}link_tool_base">
-      <inertial>
-        <mass value="0.137"/>
-        <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
-        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-      </inertial>
-      <collision name="collision">
-        <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Base.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-      </collision>
-      <visual name="visual">
-        <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Base.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-        <xacro:colour_gray_20p />
-      </visual>
-    </link>
-    <link name="${prefix}link_l_finger">
-      <inertial>
-        <mass value="0.137"/>
-        <origin xyz="-0.00706 -0.00017 -1.32E-06" rpy="0 0 0"/>
-        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-      </inertial>
-      <collision name="collision">
-        <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Left.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-      </collision>
-      <visual name="visual">
-        <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Left.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-        <xacro:colour_gray_40p />
-      </visual>
-    </link>
-    <link name="${prefix}link_r_finger">
-      <inertial>
-        <mass value="0.137"/>
-        <origin xyz="3 3 3" rpy="0 0 0"/>
-        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
-      </inertial>
-      <collision name="collision">
-        <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Right.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-      </collision>
-      <visual name="visual">
-        <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Right.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-        <xacro:colour_gray_40p />
-      </visual>
-    </link>
-    <!-- End of gripper link list -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
     <!-- Robotic arm joint list -->
-    <joint type="fixed" name="${prefix}base_link">
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- JOINT BASE_LINK -->
+    <joint type="fixed" name="base_link">
       <origin xyz="0.275 0.275 0.726" rpy="0 0 0"/>
       <axis xyz="0 0 0"/>
-      <parent link="${prefix}base"/>
-      <child link="${prefix}base_link"/>
+      <parent link="base"/>
+      <child link="base_link"/>
     </joint>
-    <joint type="revolute" name="${prefix}joint_1">
+    <!-- JOINT 1 -->
+    <joint type="revolute" name="joint_1">
       <origin xyz="0 0 0.3991" rpy="0 0 0"/>
       <axis xyz="0 0 1"/>
-      <parent link="${prefix}base_link"/>
-      <child link="${prefix}link_1"/>
+      <parent link="base_link"/>
+      <child link="link_1"/>
       <limit effort="1000" lower="-2.967" upper="2.967" velocity="5.027"/>
       <dynamics damping="50.0" friction="1.0"/>
     </joint>
-    <joint type="revolute" name="${prefix}joint_2">
+    <!-- JOINT 2 -->
+    <joint type="revolute" name="joint_2">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
-      <parent link="${prefix}link_1"/>
-      <child link="${prefix}link_2"/>
+      <parent link="link_1"/>
+      <child link="link_2"/>
       <limit effort="1000" lower="-1.745" upper="2.269" velocity="4.189"/>
       <dynamics damping="50.0" friction="1.0"/>
     </joint>
-    <joint type="revolute" name="${prefix}joint_3">
+    <!-- JOINT 3 -->
+    <joint type="revolute" name="joint_3">
       <origin xyz="0 0 0.448" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
-      <parent link="${prefix}link_2"/>
-      <child link="${prefix}link_3"/>
+      <parent link="link_2"/>
+      <child link="link_3"/>
       <limit effort="1000" lower="-3.491" upper="1.222" velocity="5.236"/>
       <dynamics damping="10.0" friction="1.0"/>
     </joint>
-    <joint type="revolute" name="${prefix}joint_4">
+    <!-- JOINT 4 -->
+    <joint type="revolute" name="joint_4">
       <origin xyz="0 0 0.042" rpy="0 0 0"/>
       <axis xyz="1 0 0"/>
-      <parent link="${prefix}link_3"/>
-      <child link="${prefix}link_4"/>
+      <parent link="link_3"/>
+      <child link="link_4"/>
       <limit effort="1000" lower="-4.712" upper="4.712" velocity="6.981"/>
       <dynamics damping="5.0" friction="1.0"/>
     </joint>
-    <joint type="revolute" name="${prefix}joint_5">
+    <!-- JOINT 5 -->
+    <joint type="revolute" name="joint_5">
       <origin xyz="0.451 0 0" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
-      <parent link="${prefix}link_4"/>
-      <child link="${prefix}link_5"/>
+      <parent link="link_4"/>
+      <child link="link_5"/>
       <limit effort="1000" lower="-2.269" upper="2.269" velocity="7.069"/>
       <dynamics damping="2.0" friction="1.0"/>
     </joint>
-    <joint type="revolute" name="${prefix}joint_6">
+    <!-- JOINT 6 -->
+    <joint type="revolute" name="joint_6">
       <origin xyz="0.082 0 0" rpy="0 0 0"/>
       <axis xyz="1 0 0"/>
-      <parent link="${prefix}link_5"/>
-      <child link="${prefix}link_6"/>
+      <parent link="link_5"/>
+      <child link="link_6"/>
       <limit effort="1000" lower="-6.283" upper="6.283" velocity="10.472"/>
       <dynamics damping="1.0" friction="1.0"/>
     </joint>
     <!-- End of robotic arm joint list -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!-- Gripper joint list -->
-    <joint type="fixed" name="${prefix}joint_flange_1">
-      <origin xyz="0 -0.02 0.02" rpy="0 ${pi/2} 0"/>
-      <parent link="${prefix}link_6"/>
-      <child link="${prefix}link_flange_1"/>
-    </joint>
-    <joint type="fixed" name="${prefix}joint_flange_2">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}link_flange_1"/>
-      <child link="${prefix}link_flange_2"/>
-    </joint>
-    <joint type="fixed" name="${prefix}joint_tool_base">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}link_flange_2"/>
-      <child link="${prefix}link_tool_base"/>
-    </joint>
-    <joint type="revolute" name="${prefix}joint_l_finger">
-      <calibration rising="10"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}link_tool_base"/>
-      <child link="${prefix}link_l_finger"/>
-      <axis xyz="0 1 0" />
-      <dynamics damping="1.0" friction="1.0"/>
-      <limit effort="1000" lower="0" upper="1" velocity="10.472"/>
-    </joint>
-    <joint type="revolute" name="${prefix}joint_r_finger">
-      <calibration rising="10"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <parent link="${prefix}link_tool_base"/>
-      <child link="${prefix}link_r_finger"/>
-      <axis xyz="0 -1 0" />
-      <dynamics damping="1.0" friction="1.0"/>
-      <limit effort="1000" lower="0" upper="1" velocity="10.472"/>
-    </joint>
-    <!-- End of gripper joint list -->
   </xacro:macro>
 </robot>

@@ -1,7 +1,7 @@
 moveit_setup_assistant_config:
   URDF:
-    package: abb_irb1200_support
-    relative_path: urdf/irb1200_5_90.xacro
+    package: pick_and_place_env
+    relative_path: urdf/environment.xacro
   SRDF:
     relative_path: config/abb_irb1200_5_90.srdf
   CONFIG:

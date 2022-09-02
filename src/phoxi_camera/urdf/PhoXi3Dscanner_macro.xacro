@@ -1,18 +1,16 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
-  <xacro:macro name = "PhoXi3Dscanner" params ="scanner_parent scanner_name *scanner_origin sensor_parent sensor_name *sensor_origin *visual *collision">
+  <xacro:macro name = "PhoXi3Dscanner">
     <!-- link list -->
     <link name="camera_stand">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_stand.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <xacro:colour_gray_70p/>
+        <!-- <xacro:colour_gray_70p/> -->
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_stand.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
@@ -20,35 +18,33 @@
     </link>
     <link name="camera_support">
       <visual>
-        <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_support.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <xacro:colour_gray_50p/>
+        <!-- <xacro:colour_gray_50p/> -->
       </visual>
       <collision>
-        <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_support.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
-    <link name="${scanner_name}">
+    <link name="PhoXi3Dscanner">
       <visual>
         <origin xyz="0 0 0" rpy="0 1.5707 0" />
         <geometry>
-          <xacro:insert_block name="visual" />
+          <mesh filename="package://phoxi_camera/meshes/visual/PhoXi_S.f.STL" scale = "0.001 0.001 0.001"/>
         </geometry>
         <xacro:colour_gray_30p/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 1.5707 0" />
         <geometry>
-          <xacro:insert_block name="collision" />
+          <mesh filename="package://phoxi_camera/meshes/collision/PhoXi_L.c.STL" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
-    <link name="${sensor_name}"/>
+    <link name="PhoXi3Dscanner_sensor"/>
     <!-- end of link list -->
     <!--  -->
     <!--  -->
@@ -65,16 +61,16 @@
       <parent link="camera_stand"/>
       <child link="camera_support"/>
     </joint>
-    <joint name="camera_support_to_${scanner_name}_joint" type="fixed">
+    <joint name="camera_support_to_PhoXi3Dscanner_joint" type="fixed">
       <origin xyz="0 0.04 0.02" rpy="${pi} 0 ${-pi/2}"/>
       <axis xyz="0 0 1"/>
       <parent link="camera_support"/>
-      <child link="${scanner_name}"/>
+      <child link="PhoXi3Dscanner"/>
     </joint>
-    <joint name="${sensor_parent}_to_${sensor_name}_joint" type="fixed">
-      <parent link="${sensor_parent}"/>
-      <child link="${sensor_name}"/>
-      <xacro:insert_block name="sensor_origin" />
+    <joint name="PhoXi3Dscanner_to_PhoXi3Dscanner_sensor_joint" type="fixed">
+      <origin xyz="-0.1173845315 0.0299 0.005287752939" rpy="0 ${-15.45/180*pi} ${pi}" />
+      <parent link="PhoXi3Dscanner"/>
+      <child link="PhoXi3Dscanner_sensor"/>
     </joint>
     <!-- end of joint list -->
   </xacro:macro>

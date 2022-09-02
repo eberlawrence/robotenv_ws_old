@@ -136,7 +136,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/user/Projects/robotenv_ws/build/pick_and_place_env/cmake_install.cmake")
   include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_support/cmake_install.cmake")
   include("/home/user/Projects/robotenv_ws/build/phoxi_camera/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver/cmake_install.cmake")
 
 endif()
 

@@ -171,7 +171,7 @@ Visualization Manager:
         Goal State Color: 138; 226; 52
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: manipulator
+        Planning Group: robotic_arm
         Query Goal State: true
         Query Start State: false
         Show Workspace: false

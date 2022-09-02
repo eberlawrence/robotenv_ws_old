@@ -20,6 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/user/Projects/robotenv_ws/devel/include"
   "/home/user/Projects/robotenv_ws/src/phoxi_camera/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
@@ -29,8 +30,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/freetype2"
   "/usr/include/opencv4"
   "/opt/Photoneo/PhoXiControl-1.4.1/API/include"
-  "/home/user/Projects/robotenv_ws/devel/include"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/BEFORE"
   )
 
 # Targets to which this target links.
