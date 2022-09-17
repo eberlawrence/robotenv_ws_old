@@ -3,32 +3,6 @@
   <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
   <xacro:macro name = "PhoXi3Dscanner">
     <!-- link list -->
-    <link name="camera_stand">
-      <visual>
-        <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_stand.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-        <!-- <xacro:colour_gray_70p/> -->
-      </visual>
-      <collision>
-        <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_stand.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-      </collision>
-    </link>
-    <link name="camera_support">
-      <visual>
-        <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_support.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-        <!-- <xacro:colour_gray_50p/> -->
-      </visual>
-      <collision>
-        <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_support.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-      </collision>
-    </link>
     <link name="PhoXi3Dscanner">
       <visual>
         <origin xyz="0 0 0" rpy="0 1.5707 0" />
@@ -40,7 +14,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 1.5707 0" />
         <geometry>
-          <mesh filename="package://phoxi_camera/meshes/collision/PhoXi_L.c.STL" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://phoxi_camera/meshes/collision/PhoXi_S.c.STL" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
@@ -49,22 +23,10 @@
     <!--  -->
     <!--  -->
     <!-- joint list -->
-    <joint name="base_to_camera_stand_joint" type="fixed">
-      <origin xyz="1.535 1.02 0" rpy="0 0 ${pi}"/>
-      <axis xyz="0 0 1"/>
-      <parent link="base"/>
-      <child link="camera_stand"/>
-    </joint>
-    <joint name="camera_stand_to_camera_support_joint" type="fixed">
-      <origin xyz="0.515 0.145 1.202" rpy="0 0 ${pi}"/>
-      <axis xyz="0 0 1"/>
-      <parent link="camera_stand"/>
-      <child link="camera_support"/>
-    </joint>
+    
     <joint name="camera_support_to_PhoXi3Dscanner_joint" type="fixed">
-      <origin xyz="0 0.04 0.02" rpy="${pi} 0 ${-pi/2}"/>
-      <axis xyz="0 0 1"/>
-      <parent link="camera_support"/>
+      <origin xyz="0.745 0.640 1.231" rpy="${pi} 0 ${-pi/2}"/>
+      <parent link="Fixed_frame"/>
       <child link="PhoXi3Dscanner"/>
     </joint>
     <joint name="PhoXi3Dscanner_to_PhoXi3Dscanner_sensor_joint" type="fixed">

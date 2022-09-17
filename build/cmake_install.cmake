@@ -132,10 +132,12 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/user/Projects/robotenv_ws/build/gtest/cmake_install.cmake")
   include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config/cmake_install.cmake")
+  include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_test/cmake_install.cmake")
   include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_resources/cmake_install.cmake")
   include("/home/user/Projects/robotenv_ws/build/pick_and_place_env/cmake_install.cmake")
   include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_support/cmake_install.cmake")
   include("/home/user/Projects/robotenv_ws/build/phoxi_camera/cmake_install.cmake")
+  include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver/cmake_install.cmake")
 
 endif()
 

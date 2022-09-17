@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+      <library_effects>
+    <effect id="effect_0">
+        <profile_COMMON>
+          <technique sid="common">
+            <phong>
+              <diffuse>
+                <color>0.603921569 0.603921569 0.603921569 1</color>
+              </diffuse>
+            </phong>
+          </technique>
+        </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="mat_0">
+      <instance_effect url="#effect_0"/>
+    </material>
+  </library_materials>
+    <asset>
+        <contributor>
+            <authoring_tool>ctmconv</authoring_tool>
+            <comments>AutoCAD solid</comments>
+        </contributor>
+        <created>2022-09-16T03:24:44</created>
+        <modified>2022-09-16T03:24:44</modified>
+    </asset>
+    <library_geometries>
+        <geometry id="Mesh-1" name="Mesh-1">
+            <mesh>
+                <source id="Mesh-1-positions" name="position">
+                    <float_array id="Mesh-1-positions-array" count="36">1e-06 1e-06 1e-06 1e-06 1e-06 114 1e-06 80 1e-06 1e-06 80 114 4 1e-06 1e-06 4 1e-06 110 4 80 1e-06 4 80 110 59 1e-06 110 59 1e-06 114 59 80 110 59 80 114 </float_array>
+                    <technique_common>
+                        <accessor count="12" offset="0" source="#Mesh-1-positions-array" stride="3">
+                            <param name="X" type="float" />
+                            <param name="Y" type="float" />
+                            <param name="Z" type="float" />
+                        </accessor>
+                    </technique_common>
+                </source>
+                <vertices id="Mesh-1-vertices">
+                    <input semantic="POSITION" source="#Mesh-1-positions" />
+                </vertices>
+                <triangles count="20">
+                    <input offset="0" semantic="VERTEX" source="#Mesh-1-vertices" />
+                    <p>5 7 8 8 7 10 9 8 11 11 8 10 2 0 3 3 0 1 6 2 7 7 2 3 7 3 11 11 10 7 7 5 6 6 5 4 4 5 0 0 5 1 1 5 9 9 5 8 1 9 3 3 9 11 4 0 6 6 0 2 </p>
+                </triangles>
+            </mesh>
+        </geometry>
+    </library_geometries>
+    <library_visual_scenes>
+        <visual_scene id="Scene-1" name="Scene-1">
+            <node id="Object-1" name="Object-1">
+                <instance_geometry url="#Mesh-1" />
+            </node>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#Scene-1" />
+    </scene>
+</COLLADA>

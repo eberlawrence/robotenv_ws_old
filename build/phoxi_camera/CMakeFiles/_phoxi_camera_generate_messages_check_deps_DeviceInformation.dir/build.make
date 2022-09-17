@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/user/Projects/robotenv_ws/build
 include phoxi_camera/CMakeFiles/_phoxi_camera_generate_messages_check_deps_DeviceInformation.dir/progress.make
 
 phoxi_camera/CMakeFiles/_phoxi_camera_generate_messages_check_deps_DeviceInformation:
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py phoxi_camera /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg phoxi_camera/DeviceType:phoxi_camera/DeviceConnectionStatus
+	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py phoxi_camera /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg phoxi_camera/DeviceConnectionStatus:phoxi_camera/DeviceType
 
 _phoxi_camera_generate_messages_check_deps_DeviceInformation: phoxi_camera/CMakeFiles/_phoxi_camera_generate_messages_check_deps_DeviceInformation
 _phoxi_camera_generate_messages_check_deps_DeviceInformation: phoxi_camera/CMakeFiles/_phoxi_camera_generate_messages_check_deps_DeviceInformation.dir/build.make

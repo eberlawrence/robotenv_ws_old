@@ -1,2 +1,2 @@
-abb_robot_arm/abb_irb1200_moveit_config:abb_robot_arm/abb_irb1200_support:abb_robot_arm/abb_resources:phoxi_camera:pick_and_place_env
+abb_robot_arm/abb_driver:abb_robot_arm/abb_irb1200_moveit_config:abb_robot_arm/abb_irb1200_moveit_config_test:abb_robot_arm/abb_irb1200_support:abb_robot_arm/abb_resources:phoxi_camera:pick_and_place_env
 -DCATKIN_DEVEL_PREFIX=/home/user/Projects/robotenv_ws/devel -DCMAKE_INSTALL_PREFIX=/home/user/Projects/robotenv_ws/install -G Unix Makefiles

@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: pick_and_place_env
+    relative_path: urdf/environment.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/abb_irb1200_5_90.srdf
+  CONFIG:
+    author_name: Eber Lawrence
+    author_email: A00289880@student.ait.ie
+    generated_timestamp: 1662296038

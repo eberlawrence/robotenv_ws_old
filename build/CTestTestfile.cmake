@@ -6,7 +6,9 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("abb_robot_arm/abb_irb1200_moveit_config")
+subdirs("abb_robot_arm/abb_irb1200_moveit_config_test")
 subdirs("abb_robot_arm/abb_resources")
 subdirs("pick_and_place_env")
 subdirs("abb_robot_arm/abb_irb1200_support")
 subdirs("phoxi_camera")
+subdirs("abb_robot_arm/abb_driver")

@@ -10,8 +10,13 @@ Panels:
         - /MotionPlanning1/Scene Robot1
         - /MotionPlanning1/Planning Request1
         - /PointCloud21
-      Splitter Ratio: 0.5170649886131287
-    Tree Height: 416
+        - /TF1/Status1
+        - /TF1/Frames1
+        - /TF1/Tree1
+        - /Axes1
+        - /Axes1/Status1
+      Splitter Ratio: 0.5149999856948853
+    Tree Height: 430
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -29,7 +34,7 @@ Visualization Manager:
     - Alpha: 0.5
       Cell Size: 1
       Class: rviz/Grid
-      Color: 160; 160; 164
+      Color: 0; 0; 0
       Enabled: true
       Line Style:
         Line Width: 0.029999999329447746
@@ -74,6 +79,11 @@ Visualization Manager:
           Expand Joint Details: false
           Expand Link Details: false
           Expand Tree: false
+          Fixed_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           Link Tree Style: Links in Alphabetic Order
           PhoXi3Dscanner:
             Alpha: 1
@@ -84,32 +94,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_stand:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_support:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          conveyor_base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          conveyor_belt:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -144,10 +129,31 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          tool0:
+          link_flange_1:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
+          link_flange_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_l_finger:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_r_finger:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_tool_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
         Loop Animation: false
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
@@ -193,6 +199,11 @@ Visualization Manager:
           Expand Joint Details: false
           Expand Link Details: false
           Expand Tree: false
+          Fixed_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           Link Tree Style: Links in Alphabetic Order
           PhoXi3Dscanner:
             Alpha: 1
@@ -203,32 +214,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
-          base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           base_link:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_stand:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          camera_support:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          conveyor_base:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
-          conveyor_belt:
             Alpha: 1
             Show Axes: false
             Show Trail: false
@@ -263,10 +249,31 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          tool0:
+          link_flange_1:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
+          link_flange_2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_l_finger:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_r_finger:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link_tool_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
         Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
@@ -300,11 +307,35 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
+    - Class: rviz/TF
+      Enabled: false
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Marker Alpha: 1
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        {}
+      Update Interval: 0
+      Value: false
+    - Alpha: 1
+      Class: rviz/Axes
+      Enabled: true
+      Length: 0.20000000298023224
+      Name: Axes
+      Radius: 0.009999999776482582
+      Reference Frame: base_link
+      Show Trail: false
+      Value: true
   Enabled: true
   Global Options:
-    Background Color: 160; 160; 164
+    Background Color: 238; 238; 236
     Default Light: true
-    Fixed Frame: base
+    Fixed Frame: Fixed_frame
     Frame Rate: 31
   Name: root
   Tools:
@@ -316,7 +347,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.9777870178222656
+      Distance: 4.5301361083984375
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -324,33 +355,33 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.6957634687423706
-        Y: 0.2556709051132202
-        Z: -2.5469546471867943e-08
-      Focal Shape Fixed Size: true
+        X: 0.5890836715698242
+        Y: -1.3131077289581299
+        Z: 1.2516975402832031e-06
+      Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6597985625267029
+      Pitch: 0.48039859533309937
       Target Frame: base_link
-      Yaw: 5.278637886047363
+      Yaw: 5.041679382324219
     Saved: ~
 Window Geometry:
   Displays:
-    collapsed: false
-  Height: 965
+    collapsed: true
+  Height: 991
   Help:
     collapsed: false
-  Hide Left Dock: false
+  Hide Left Dock: true
   Hide Right Dock: false
   MotionPlanning:
-    collapsed: false
+    collapsed: true
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002a00000036bfc0200000008fb000000100044006900730070006c006100790073010000003d000001dd000000c900fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a0056006900650077007300000003b0000000b0000000a400fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000020f000001d60000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000220000001880000017d00fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016000004da0000036b00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd00000001000000000000062900000385fc0200000008fb000000100044006900730070006c006100790073000000003d000001eb000000c900fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a0056006900650077007300000003b0000000b0000000a400fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000020f000001d60000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067000000022e000001940000017d00fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016000007800000038500000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
   Width: 1920
   X: 0
-  Y: 27
+  Y: 0

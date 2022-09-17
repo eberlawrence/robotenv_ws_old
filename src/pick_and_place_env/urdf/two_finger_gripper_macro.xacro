@@ -12,7 +12,7 @@
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/Common_Flange.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <!-- <xacro:colour_orange /> -->
+        <xacro:colour_orange />
       </visual>
       <collision name="collision">
         <geometry>
@@ -29,7 +29,7 @@
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/PB-0013_Flange.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <!-- <xacro:colour_white /> -->
+        <xacro:colour_white />
       </visual>
       <collision name="collision">
         <geometry>
@@ -46,7 +46,7 @@
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/PB-0013_Base.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <!-- <xacro:colour_gray_20p /> -->
+        <xacro:colour_gray_20p />
       </visual>
       <collision name="collision">
         <geometry>
@@ -63,7 +63,7 @@
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/PB-0013_Left.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <!-- <xacro:colour_gray_40p /> -->
+        <xacro:colour_gray_40p />
       </visual>
       <collision name="collision">
         <geometry>
@@ -80,7 +80,7 @@
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/PB-0013_Right.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <!-- <xacro:colour_gray_40p /> -->
+        <xacro:colour_gray_40p />
       </visual>
       <collision name="collision">
         <geometry>
