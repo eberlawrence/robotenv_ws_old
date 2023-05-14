@@ -130,31 +130,15 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-<<<<<<< HEAD
   include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/gtest/cmake_install.cmake")
   include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_5_90_moveit_config/cmake_install.cmake")
   include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config/cmake_install.cmake")
   include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_test/cmake_install.cmake")
   include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_resources/cmake_install.cmake")
-  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/iai_kinect2_opencv4/iai_kinect2/cmake_install.cmake")
   include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/pick_and_place_env/cmake_install.cmake")
   include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_support/cmake_install.cmake")
-  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/iai_kinect2_opencv4/kinect2_registration/cmake_install.cmake")
-  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/iai_kinect2_opencv4/kinect2_bridge/cmake_install.cmake")
-  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/iai_kinect2_opencv4/kinect2_calibration/cmake_install.cmake")
-  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/iai_kinect2_opencv4/kinect2_viewer/cmake_install.cmake")
   include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera/cmake_install.cmake")
   include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver/cmake_install.cmake")
-=======
-  include("/home/user/Projects/robotenv_ws/build/gtest/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_test/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_resources/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/pick_and_place_env/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_support/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/phoxi_camera/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver/cmake_install.cmake")
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 
 endif()
 

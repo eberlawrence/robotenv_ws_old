@@ -53,7 +53,6 @@ CMAKE_BINARY_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build
 # Include the progress variables for this target.
 include phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp.dir/progress.make
 
-<<<<<<< HEAD
 phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/PhoXiSize.h
 phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/DeviceConnectionStatus.h
 phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/DeviceType.h
@@ -95,8 +94,8 @@ phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/
 
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg
-/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from phoxi_camera/DeviceInformation.msg"
 	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera && /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg -Iphoxi_camera:/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
@@ -198,8 +197,8 @@ phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/
 
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv
-/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/share/geometry_msgs/msg/Transform.msg
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/share/gencpp/srv.h.template
@@ -212,166 +211,6 @@ phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/GetString.h: /opt/ros/noetic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating C++ code from phoxi_camera/GetString.srv"
 	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera && /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv -Iphoxi_camera:/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-=======
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/PhoXiSize.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceConnectionStatus.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceType.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/Empty.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/IsConnected.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/IsAcquiring.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/ConnectCamera.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/TriggerImage.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetDeviceList.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetBool.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetFrame.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetHardwareIdentification.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetSupportedCapturingModes.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SaveFrame.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SaveLastFrame.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetCoordinatesSpace.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp: /home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetString.h
-
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/PhoXiSize.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/PhoXiSize.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/PhoXiSize.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from phoxi_camera/PhoXiSize.msg"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceConnectionStatus.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceConnectionStatus.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceConnectionStatus.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from phoxi_camera/DeviceConnectionStatus.msg"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceType.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceType.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceType.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from phoxi_camera/DeviceType.msg"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/DeviceInformation.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from phoxi_camera/DeviceInformation.msg"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/Empty.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/Empty.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/Empty.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/Empty.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from phoxi_camera/Empty.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/IsConnected.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/IsConnected.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/IsConnected.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/IsConnected.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from phoxi_camera/IsConnected.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/IsAcquiring.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/IsAcquiring.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/IsAcquiring.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/IsAcquiring.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from phoxi_camera/IsAcquiring.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/ConnectCamera.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/ConnectCamera.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/ConnectCamera.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/ConnectCamera.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from phoxi_camera/ConnectCamera.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/TriggerImage.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/TriggerImage.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/TriggerImage.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/TriggerImage.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from phoxi_camera/TriggerImage.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetDeviceList.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetDeviceList.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetDeviceList.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetDeviceList.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetDeviceList.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetDeviceList.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetDeviceList.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from phoxi_camera/GetDeviceList.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetBool.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetBool.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetBool.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetBool.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from phoxi_camera/GetBool.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetFrame.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetFrame.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetFrame.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetFrame.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from phoxi_camera/GetFrame.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetHardwareIdentification.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetHardwareIdentification.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetHardwareIdentification.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetHardwareIdentification.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from phoxi_camera/GetHardwareIdentification.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetSupportedCapturingModes.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetSupportedCapturingModes.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetSupportedCapturingModes.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetSupportedCapturingModes.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetSupportedCapturingModes.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from phoxi_camera/GetSupportedCapturingModes.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SaveFrame.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SaveFrame.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SaveFrame.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SaveFrame.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating C++ code from phoxi_camera/SaveFrame.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SaveLastFrame.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SaveLastFrame.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SaveLastFrame.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SaveLastFrame.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating C++ code from phoxi_camera/SaveLastFrame.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetCoordinatesSpace.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetCoordinatesSpace.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetCoordinatesSpace.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetCoordinatesSpace.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating C++ code from phoxi_camera/SetCoordinatesSpace.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/share/geometry_msgs/msg/Transform.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/SetTransformationMatrix.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating C++ code from phoxi_camera/SetTransformationMatrix.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
-
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetString.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetString.h: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetString.h: /opt/ros/noetic/share/gencpp/msg.h.template
-/home/user/Projects/robotenv_ws/devel/include/phoxi_camera/GetString.h: /opt/ros/noetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating C++ code from phoxi_camera/GetString.srv"
-	cd /home/user/Projects/robotenv_ws/src/phoxi_camera && /home/user/Projects/robotenv_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/include/phoxi_camera -e /opt/ros/noetic/share/gencpp/cmake/..
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 
 phoxi_camera_generate_messages_cpp: phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_cpp
 phoxi_camera_generate_messages_cpp: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include/phoxi_camera/PhoXiSize.h

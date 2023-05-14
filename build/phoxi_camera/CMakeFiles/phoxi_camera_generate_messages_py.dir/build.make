@@ -53,7 +53,6 @@ CMAKE_BINARY_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build
 # Include the progress variables for this target.
 include phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py.dir/progress.make
 
-<<<<<<< HEAD
 phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_PhoXiSize.py
 phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceConnectionStatus.py
 phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceType.py
@@ -94,8 +93,8 @@ phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/R
 
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg
-/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG phoxi_camera/DeviceInformation"
 	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg -Iphoxi_camera:/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg
 
@@ -170,8 +169,8 @@ phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/R
 
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv
-/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py: /opt/ros/noetic/share/geometry_msgs/msg/Transform.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating Python code from SRV phoxi_camera/SetTransformationMatrix"
 	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv -Iphoxi_camera:/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
@@ -226,180 +225,6 @@ phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/R
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetString.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating Python srv __init__.py for phoxi_camera"
 	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv --initpy
-=======
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_PhoXiSize.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceConnectionStatus.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceType.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_Empty.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_IsConnected.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_IsAcquiring.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_ConnectCamera.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_TriggerImage.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetBool.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetFrame.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetHardwareIdentification.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetSupportedCapturingModes.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SaveFrame.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SaveLastFrame.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetCoordinatesSpace.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetString.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py
-phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py
-
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_PhoXiSize.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_PhoXiSize.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG phoxi_camera/PhoXiSize"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceConnectionStatus.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceConnectionStatus.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG phoxi_camera/DeviceConnectionStatus"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceType.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceType.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG phoxi_camera/DeviceType"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG phoxi_camera/DeviceInformation"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_Empty.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_Empty.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python code from SRV phoxi_camera/Empty"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_IsConnected.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_IsConnected.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python code from SRV phoxi_camera/IsConnected"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_IsAcquiring.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_IsAcquiring.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python code from SRV phoxi_camera/IsAcquiring"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_ConnectCamera.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_ConnectCamera.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python code from SRV phoxi_camera/ConnectCamera"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_TriggerImage.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_TriggerImage.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python code from SRV phoxi_camera/TriggerImage"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python code from SRV phoxi_camera/GetDeviceList"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetBool.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetBool.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python code from SRV phoxi_camera/GetBool"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetFrame.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetFrame.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Python code from SRV phoxi_camera/GetFrame"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetHardwareIdentification.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetHardwareIdentification.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Python code from SRV phoxi_camera/GetHardwareIdentification"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetSupportedCapturingModes.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetSupportedCapturingModes.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetSupportedCapturingModes.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Python code from SRV phoxi_camera/GetSupportedCapturingModes"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SaveFrame.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SaveFrame.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Python code from SRV phoxi_camera/SaveFrame"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SaveLastFrame.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SaveLastFrame.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Python code from SRV phoxi_camera/SaveLastFrame"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetCoordinatesSpace.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetCoordinatesSpace.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Python code from SRV phoxi_camera/SetCoordinatesSpace"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py: /opt/ros/noetic/share/geometry_msgs/msg/Transform.msg
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating Python code from SRV phoxi_camera/SetTransformationMatrix"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetString.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetString.py: /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating Python code from SRV phoxi_camera/GetString"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv -Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_PhoXiSize.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceConnectionStatus.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceType.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_Empty.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_IsConnected.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_IsAcquiring.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_ConnectCamera.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_TriggerImage.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetBool.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetFrame.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetHardwareIdentification.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetSupportedCapturingModes.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SaveFrame.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SaveLastFrame.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetCoordinatesSpace.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetString.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating Python msg __init__.py for phoxi_camera"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg --initpy
-
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_PhoXiSize.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceConnectionStatus.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceType.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_DeviceInformation.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_Empty.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_IsConnected.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_IsAcquiring.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_ConnectCamera.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_TriggerImage.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetBool.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetFrame.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetHardwareIdentification.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetSupportedCapturingModes.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SaveFrame.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SaveLastFrame.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetCoordinatesSpace.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_SetTransformationMatrix.py
-/home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/__init__.py: /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetString.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating Python srv __init__.py for phoxi_camera"
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/user/Projects/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv --initpy
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 
 phoxi_camera_generate_messages_py: phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py
 phoxi_camera_generate_messages_py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/msg/_PhoXiSize.py
