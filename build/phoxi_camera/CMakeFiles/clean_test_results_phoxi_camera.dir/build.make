@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Projects/robotenv_ws/src
+CMAKE_SOURCE_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Projects/robotenv_ws/build
+CMAKE_BINARY_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build
 
 # Utility rule file for clean_test_results_phoxi_camera.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/user/Projects/robotenv_ws/build
 include phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera.dir/progress.make
 
 phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera:
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/user/Projects/robotenv_ws/build/test_results/phoxi_camera
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/test_results/phoxi_camera
 
 clean_test_results_phoxi_camera: phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera
 clean_test_results_phoxi_camera: phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera.dir/build.make
@@ -67,10 +67,10 @@ phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera.dir/build: clean_test_re
 .PHONY : phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera.dir/build
 
 phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera.dir/clean:
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_phoxi_camera.dir/cmake_clean.cmake
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_phoxi_camera.dir/cmake_clean.cmake
 .PHONY : phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera.dir/clean
 
 phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera.dir/depend:
-	cd /home/user/Projects/robotenv_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/robotenv_ws/src /home/user/Projects/robotenv_ws/src/phoxi_camera /home/user/Projects/robotenv_ws/build /home/user/Projects/robotenv_ws/build/phoxi_camera /home/user/Projects/robotenv_ws/build/phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : phoxi_camera/CMakeFiles/clean_test_results_phoxi_camera.dir/depend
 

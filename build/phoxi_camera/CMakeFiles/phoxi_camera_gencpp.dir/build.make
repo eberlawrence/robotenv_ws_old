@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Projects/robotenv_ws/src
+CMAKE_SOURCE_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Projects/robotenv_ws/build
+CMAKE_BINARY_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build
 
 # Utility rule file for phoxi_camera_gencpp.
 
@@ -63,10 +63,10 @@ phoxi_camera/CMakeFiles/phoxi_camera_gencpp.dir/build: phoxi_camera_gencpp
 .PHONY : phoxi_camera/CMakeFiles/phoxi_camera_gencpp.dir/build
 
 phoxi_camera/CMakeFiles/phoxi_camera_gencpp.dir/clean:
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && $(CMAKE_COMMAND) -P CMakeFiles/phoxi_camera_gencpp.dir/cmake_clean.cmake
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera && $(CMAKE_COMMAND) -P CMakeFiles/phoxi_camera_gencpp.dir/cmake_clean.cmake
 .PHONY : phoxi_camera/CMakeFiles/phoxi_camera_gencpp.dir/clean
 
 phoxi_camera/CMakeFiles/phoxi_camera_gencpp.dir/depend:
-	cd /home/user/Projects/robotenv_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/robotenv_ws/src /home/user/Projects/robotenv_ws/src/phoxi_camera /home/user/Projects/robotenv_ws/build /home/user/Projects/robotenv_ws/build/phoxi_camera /home/user/Projects/robotenv_ws/build/phoxi_camera/CMakeFiles/phoxi_camera_gencpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera/CMakeFiles/phoxi_camera_gencpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : phoxi_camera/CMakeFiles/phoxi_camera_gencpp.dir/depend
 

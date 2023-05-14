@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state"
-  "/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state.pdb"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state.pdb"
   "CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.o"
   "CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.o"
 )

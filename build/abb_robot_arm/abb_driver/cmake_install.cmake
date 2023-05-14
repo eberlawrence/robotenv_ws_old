@@ -1,8 +1,8 @@
-# Install script for directory: /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver
+# Install script for directory: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/user/Projects/robotenv_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver/catkin_generated/installspace/abb_driver.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver/catkin_generated/installspace/abb_driver.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_driver/cmake" TYPE FILE FILES
-    "/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver/catkin_generated/installspace/abb_driverConfig.cmake"
-    "/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver/catkin_generated/installspace/abb_driverConfig-version.cmake"
+    "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver/catkin_generated/installspace/abb_driverConfig.cmake"
+    "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver/catkin_generated/installspace/abb_driverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_driver" TYPE FILE FILES "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_driver" TYPE FILE FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/abb_driver/robot_state"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/abb_driver" TYPE EXECUTABLE FILES "/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/abb_driver" TYPE EXECUTABLE FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/abb_driver/robot_state" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/abb_driver/robot_state")
     file(RPATH_CHANGE
@@ -79,7 +79,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/abb_driver/motion_download_interface"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/abb_driver" TYPE EXECUTABLE FILES "/home/user/Projects/robotenv_ws/devel/lib/abb_driver/motion_download_interface")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/abb_driver" TYPE EXECUTABLE FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/motion_download_interface")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/abb_driver/motion_download_interface" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/abb_driver/motion_download_interface")
     file(RPATH_CHANGE
@@ -93,10 +93,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_driver/launch" TYPE DIRECTORY FILES "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_driver/launch" TYPE DIRECTORY FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver/launch/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_driver/rapid" TYPE DIRECTORY FILES "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/rapid/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_driver/rapid" TYPE DIRECTORY FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver/rapid/")
 endif()
 

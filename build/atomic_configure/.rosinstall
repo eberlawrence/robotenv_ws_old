@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/user/Projects/robotenv_ws/devel/setup.sh
+    local-name: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/setup.sh

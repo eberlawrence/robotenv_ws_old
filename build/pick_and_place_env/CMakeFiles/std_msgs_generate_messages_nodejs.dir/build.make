@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Projects/robotenv_ws/src
+CMAKE_SOURCE_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Projects/robotenv_ws/build
+CMAKE_BINARY_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build
 
 # Utility rule file for std_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ pick_and_place_env/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build: std_m
 .PHONY : pick_and_place_env/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 
 pick_and_place_env/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/user/Projects/robotenv_ws/build/pick_and_place_env && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/pick_and_place_env && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : pick_and_place_env/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 
 pick_and_place_env/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/user/Projects/robotenv_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/robotenv_ws/src /home/user/Projects/robotenv_ws/src/pick_and_place_env /home/user/Projects/robotenv_ws/build /home/user/Projects/robotenv_ws/build/pick_and_place_env /home/user/Projects/robotenv_ws/build/pick_and_place_env/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/pick_and_place_env /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/pick_and_place_env /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/pick_and_place_env/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pick_and_place_env/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/src/phoxi_camera_node.cpp" "/home/user/Projects/robotenv_ws/build/phoxi_camera/CMakeFiles/phoxi_camera.dir/src/phoxi_camera_node.cpp.o"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/src/phoxi_camera_node.cpp" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera/CMakeFiles/phoxi_camera.dir/src/phoxi_camera_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,8 +20,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/user/Projects/robotenv_ws/devel/include"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/include"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/include"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"
@@ -34,8 +34,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/user/Projects/robotenv_ws/build/phoxi_camera/CMakeFiles/phoxi_camera_Ros_Interface.dir/DependInfo.cmake"
-  "/home/user/Projects/robotenv_ws/build/phoxi_camera/CMakeFiles/phoxi_camera_PhoXi_Interface.dir/DependInfo.cmake"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera/CMakeFiles/phoxi_camera_Ros_Interface.dir/DependInfo.cmake"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera/CMakeFiles/phoxi_camera_PhoXi_Interface.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

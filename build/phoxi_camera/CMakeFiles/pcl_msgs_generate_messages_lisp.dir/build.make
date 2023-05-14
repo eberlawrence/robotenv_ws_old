@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Projects/robotenv_ws/src
+CMAKE_SOURCE_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Projects/robotenv_ws/build
+CMAKE_BINARY_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build
 
 # Utility rule file for pcl_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ phoxi_camera/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build: pcl_msgs_gene
 .PHONY : phoxi_camera/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
 
 phoxi_camera/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean:
-	cd /home/user/Projects/robotenv_ws/build/phoxi_camera && $(CMAKE_COMMAND) -P CMakeFiles/pcl_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera && $(CMAKE_COMMAND) -P CMakeFiles/pcl_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : phoxi_camera/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
 
 phoxi_camera/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/depend:
-	cd /home/user/Projects/robotenv_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/robotenv_ws/src /home/user/Projects/robotenv_ws/src/phoxi_camera /home/user/Projects/robotenv_ws/build /home/user/Projects/robotenv_ws/build/phoxi_camera /home/user/Projects/robotenv_ws/build/phoxi_camera/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : phoxi_camera/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/depend
 

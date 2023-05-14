@@ -1,26 +1,11 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find abb_resources)/urdf/common_materials.xacro"/>
-  <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
+  <xacro:include filename="$(find pick_and_place_env)/urdf/colours/specific_colours.xacro"/>
   <xacro:macro name="abb_irb1200_5_90">
     <!--  -->
     <!--  -->
     <!--  -->
     <!-- Robotic arm link list -->
-    <!-- BASE -->
-    <link name="base">
-      <visual name="visual">
-        <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/robot_stand.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-        <xacro:colour_gray_50p/>
-      </visual>
-      <collision name="collision">
-        <geometry>
-          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/robot_stand.stl" scale = "0.001 0.001 0.001"/>
-        </geometry>
-      </collision>
-    </link>
     <!-- BASE_LINK -->
     <link name="base_link">
       <visual name="visual">
@@ -32,6 +17,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/collision/base_link.stl"/>
         </geometry>
+        <xacro:collision_colour />
       </collision>
       <inertial>
         <mass value="13.7742"/>
@@ -45,6 +31,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_1.dae"/>
         </geometry>
+        <xacro:collision_colour />
       </visual>
       <collision>
         <geometry>
@@ -63,6 +50,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_2.dae"/>
         </geometry>
+        <xacro:collision_colour />
       </visual>
       <collision name="collision">
         <geometry>
@@ -81,7 +69,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_3.dae"/>
         </geometry>
-        <xacro:colour_orange />
+        <xacro:collision_colour />
       </visual>
       <collision name="collision">
         <geometry>
@@ -100,6 +88,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_4.dae"/>
         </geometry>
+        <xacro:collision_colour />
       </visual>
       <collision name="collision">
         <geometry>
@@ -118,6 +107,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_5.dae"/>
         </geometry>
+        <xacro:collision_colour />
       </visual>
       <collision name="collision">
         <geometry>
@@ -136,6 +126,7 @@
         <geometry>
           <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/link_6.dae"/>
         </geometry>
+        <xacro:collision_colour />
       </visual>
       <collision name="collision">
         <geometry>
@@ -148,6 +139,7 @@
         <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
       </inertial>
     </link>
+    <link name="tool0" />
     <!-- End of robotic arm link list -->
     <!--  -->
     <!--  -->
@@ -157,10 +149,10 @@
     <!--  -->
     <!--  -->
     <!-- JOINT BASE_LINK -->
-    <joint type="fixed" name="base_link">
-      <origin xyz="0.275 0.275 0.726" rpy="0 0 0"/>
+    <joint name="Room_to_base_link" type="fixed" >
+      <origin xyz="0 0 0.726" rpy="0 0 0"/>
       <axis xyz="0 0 0"/>
-      <parent link="base"/>
+      <parent link="RoomComponents"/>
       <child link="base_link"/>
     </joint>
     <!-- JOINT 1 -->
@@ -218,5 +210,11 @@
       <dynamics damping="1.0" friction="1.0"/>
     </joint>
     <!-- End of robotic arm joint list -->
+    <!-- ROS-Industrial 'tool0' frame: all-zeros tool frame -->
+    <joint name="link_6-tool0" type="fixed">
+      <origin xyz="0 0 0" rpy="0 ${radians(90)} 0" />
+      <parent link="link_6" />
+      <child link="tool0" />
+    </joint>
   </xacro:macro>
 </robot>

@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/user/Projects/robotenv_ws/src/phoxi_camera/include/phoxi_camera/PhoXiConversions.h
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/include/phoxi_camera/PhoXiConversions.h
 PhoXi.h
 -
 phoxi_camera/PhoXiDeviceInformation.h
 -
 
-/home/user/Projects/robotenv_ws/src/phoxi_camera/include/phoxi_camera/PhoXiDeviceInformation.h
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/include/phoxi_camera/PhoXiDeviceInformation.h
 string
 -
 PhoXi.h
 -
 
-/home/user/Projects/robotenv_ws/src/phoxi_camera/include/phoxi_camera/PhoXiException.h
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/include/phoxi_camera/PhoXiException.h
 exception
 -
 
-/home/user/Projects/robotenv_ws/src/phoxi_camera/include/phoxi_camera/PhoXiInterface.h
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/include/phoxi_camera/PhoXiInterface.h
 PhoXi.h
 -
 pcl/point_types.h
@@ -36,7 +36,7 @@ phoxi_camera/PhoXiException.h
 phoxi_camera/PhoXiDeviceInformation.h
 -
 
-/home/user/Projects/robotenv_ws/src/phoxi_camera/src/PhoXiInterface.cpp
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/src/PhoXiInterface.cpp
 phoxi_camera/PhoXiInterface.h
 -
 phoxi_camera/PhoXiConversions.h
@@ -177,7 +177,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -195,7 +195,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -213,7 +213,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -235,7 +235,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -931,7 +931,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -949,7 +949,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -969,7 +969,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -985,7 +985,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -

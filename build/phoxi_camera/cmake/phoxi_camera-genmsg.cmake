@@ -2,7 +2,7 @@
 
 message(STATUS "phoxi_camera: 4 messages, 15 services")
 
-set(MSG_I_FLAGS "-Iphoxi_camera:/home/user/Projects/robotenv_ws/src/phoxi_camera/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iphoxi_camera:/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,99 +17,99 @@ add_custom_target(phoxi_camera_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" "phoxi_camera/DeviceType:phoxi_camera/DeviceConnectionStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" "phoxi_camera/DeviceConnectionStatus:phoxi_camera/DeviceType"
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" "phoxi_camera/DeviceType:phoxi_camera/DeviceInformation:phoxi_camera/DeviceConnectionStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" "phoxi_camera/DeviceType:phoxi_camera/DeviceConnectionStatus:phoxi_camera/DeviceInformation"
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" "phoxi_camera/PhoXiSize"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" "phoxi_camera/PhoXiSize"
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" ""
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" "geometry_msgs/Transform:geometry_msgs/Quaternion:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" "geometry_msgs/Vector3:geometry_msgs/Quaternion:geometry_msgs/Transform"
 )
 
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv" ""
 )
 
 #
@@ -119,117 +119,117 @@ add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 
 ### Generating Services
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
-)
-_generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv"
-  "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
-)
-_generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv"
+  "${MSG_I_FLAGS}"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
+)
+_generate_srv_cpp(phoxi_camera
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
+)
+_generate_srv_cpp(phoxi_camera
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
@@ -247,43 +247,43 @@ add_custom_target(phoxi_camera_generate_messages_cpp
 add_dependencies(phoxi_camera_generate_messages phoxi_camera_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_cpp _phoxi_camera_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -296,117 +296,117 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS phoxi_camera_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 
 ### Generating Services
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
-)
-_generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv"
-  "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
-)
-_generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv"
+  "${MSG_I_FLAGS}"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
+)
+_generate_srv_eus(phoxi_camera
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
+)
+_generate_srv_eus(phoxi_camera
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
@@ -424,43 +424,43 @@ add_custom_target(phoxi_camera_generate_messages_eus
 add_dependencies(phoxi_camera_generate_messages phoxi_camera_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_eus _phoxi_camera_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -473,117 +473,117 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS phoxi_camera_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 
 ### Generating Services
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
-)
-_generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv"
-  "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
-)
-_generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv"
+  "${MSG_I_FLAGS}"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
+)
+_generate_srv_lisp(phoxi_camera
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
+)
+_generate_srv_lisp(phoxi_camera
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
@@ -601,43 +601,43 @@ add_custom_target(phoxi_camera_generate_messages_lisp
 add_dependencies(phoxi_camera_generate_messages phoxi_camera_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_lisp _phoxi_camera_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -650,117 +650,117 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS phoxi_camera_generate_messages_lisp
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 
 ### Generating Services
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
-)
-_generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv"
-  "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
-)
-_generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv"
+  "${MSG_I_FLAGS}"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
+)
+_generate_srv_nodejs(phoxi_camera
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
+)
+_generate_srv_nodejs(phoxi_camera
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
@@ -778,43 +778,43 @@ add_custom_target(phoxi_camera_generate_messages_nodejs
 add_dependencies(phoxi_camera_generate_messages phoxi_camera_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_nodejs _phoxi_camera_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -827,117 +827,117 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS phoxi_camera_generate_messages_node
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_msg_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 
 ### Generating Services
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
-)
-_generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv"
-  "${MSG_I_FLAGS}"
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
-)
-_generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv"
+  "${MSG_I_FLAGS}"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
+)
+_generate_srv_py(phoxi_camera
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
-  "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
+)
+_generate_srv_py(phoxi_camera
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
@@ -955,43 +955,43 @@ add_custom_target(phoxi_camera_generate_messages_py
 add_dependencies(phoxi_camera_generate_messages phoxi_camera_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/PhoXiSize.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsConnected.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/IsAcquiring.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/ConnectCamera.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/TriggerImage.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetHardwareIdentification.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetSupportedCapturingModes.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SaveLastFrame.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetCoordinatesSpace.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
+get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
 add_dependencies(phoxi_camera_generate_messages_py _phoxi_camera_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

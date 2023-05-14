@@ -1,2 +1,2 @@
-abb_robot_arm/abb_irb1200_moveit_config:abb_robot_arm/abb_irb1200_support:abb_robot_arm/abb_resources:phoxi_camera:pick_and_place_env
--DCATKIN_DEVEL_PREFIX=/home/user/Projects/robotenv_ws/devel -DCMAKE_INSTALL_PREFIX=/home/user/Projects/robotenv_ws/install -G Unix Makefiles
+abb_robot_arm/abb_driver:abb_robot_arm/abb_irb1200_5_90_moveit_config:abb_robot_arm/abb_irb1200_moveit_config:abb_robot_arm/abb_irb1200_moveit_config_test:abb_robot_arm/abb_irb1200_support:abb_robot_arm/abb_resources:iai_kinect2_opencv4/iai_kinect2:iai_kinect2_opencv4/kinect2_bridge:iai_kinect2_opencv4/kinect2_calibration:iai_kinect2_opencv4/kinect2_registration:iai_kinect2_opencv4/kinect2_viewer:phoxi_camera:pick_and_place_env
+-DCATKIN_DEVEL_PREFIX=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel -DCMAKE_INSTALL_PREFIX=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install -G Unix Makefiles

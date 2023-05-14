@@ -13,21 +13,21 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/user/Projects/robotenv_ws/src/phoxi_camera"
+echo_and_run cd "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/user/Projects/robotenv_ws/install/lib/python3/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/lib/python3/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/user/Projects/robotenv_ws/install/lib/python3/dist-packages:/home/user/Projects/robotenv_ws/build/lib/python3/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/user/Projects/robotenv_ws/build" \
+    PYTHONPATH="/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/lib/python3/dist-packages:/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build" \
     "/usr/bin/python3" \
-    "/home/user/Projects/robotenv_ws/src/phoxi_camera/setup.py" \
+    "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/setup.py" \
      \
-    build --build-base "/home/user/Projects/robotenv_ws/build/phoxi_camera" \
+    build --build-base "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera" \
     install \
     --root="${DESTDIR-/}" \
-    --install-layout=deb --prefix="/home/user/Projects/robotenv_ws/install" --install-scripts="/home/user/Projects/robotenv_ws/install/bin"
+    --install-layout=deb --prefix="/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install" --install-scripts="/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/bin"

@@ -2,6 +2,7 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:include filename="$(find abb_resources)/urdf/common_materials.xacro"/>
   <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
+  <xacro:include filename="$(find pick_and_place_env)/urdf/colours/specific_colours.xacro"/>
   <xacro:macro name="two_finger_gripper">
     <!--  -->
     <!--  -->
@@ -10,14 +11,14 @@
     <link name="link_flange_1">
       <visual name="visual">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/Common_Flange.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/Flange_01.dae" scale = "0.01 0.01 0.01"/>
         </geometry>
-        <!-- <xacro:colour_orange /> -->
       </visual>
       <collision name="collision">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/Common_Flange.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/updated_meshes/Flange_01Collision.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
+        <xacro:collision_colour />
       </collision>
       <inertial>
         <mass value="0.137"/>
@@ -27,14 +28,14 @@
     <link name="link_flange_2">
       <visual name="visual">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Flange.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/Flange_02.dae" scale = "0.01 0.01 0.01"/>
         </geometry>
-        <!-- <xacro:colour_white /> -->
       </visual>
       <collision name="collision">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Flange.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/updated_meshes/Flange_02Collision.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
+        <xacro:collision_colour />
       </collision>
       <inertial>
         <mass value="0.137"/>
@@ -46,12 +47,13 @@
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/PB-0013_Base.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <!-- <xacro:colour_gray_20p /> -->
+        <xacro:colour_gray_20p />
       </visual>
       <collision name="collision">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Base.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/updated_meshes/PB-0013BaseCollision.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
+        <xacro:collision_colour />
       </collision>
       <inertial>
         <mass value="0.137"/>
@@ -63,12 +65,13 @@
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/PB-0013_Left.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <!-- <xacro:colour_gray_40p /> -->
+        <xacro:colour_gray_40p />
       </visual>
       <collision name="collision">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Left.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/updated_meshes/PB-0013LeftCollision.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
+        <xacro:collision_colour />
       </collision>
       <inertial>
         <mass value="0.137"/>
@@ -80,12 +83,13 @@
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/PB-0013_Right.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
-        <!-- <xacro:colour_gray_40p /> -->
+        <xacro:colour_gray_40p />
       </visual>
       <collision name="collision">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/PB-0013_Right.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/updated_meshes/PB-0013RightCollision.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
+        <xacro:collision_colour />
       </collision>
       <inertial>
         <mass value="0.137"/>
@@ -98,8 +102,8 @@
     <!--  -->
     <!-- Gripper joint list -->
     <joint type="fixed" name="joint_flange_1">
-      <origin xyz="0 -0.02 0.02" rpy="0 ${pi/2} 0"/>
-      <parent link="link_6"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="tool0"/>
       <child link="link_flange_1"/>
     </joint>
     <joint type="fixed" name="joint_flange_2">
@@ -108,7 +112,7 @@
       <child link="link_flange_2"/>
     </joint>
     <joint type="fixed" name="joint_tool_base">
-      <origin xyz="0.02 0.02 0.151" rpy="${pi} 0 0"/>
+      <origin xyz="0 0 0.116" rpy="${pi} 0 ${pi/2}"/>
       <parent link="link_flange_2"/>
       <child link="link_tool_base"/>
     </joint>

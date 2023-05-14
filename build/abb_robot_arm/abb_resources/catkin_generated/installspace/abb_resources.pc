@@ -1,4 +1,4 @@
-prefix=/home/user/Projects/robotenv_ws/install
+prefix=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install
 
 Name: abb_resources
 Description: Description of abb_resources

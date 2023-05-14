@@ -1,8 +1,8 @@
-# Install script for directory: /home/user/Projects/robotenv_ws/src
+# Install script for directory: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/user/Projects/robotenv_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -49,93 +49,101 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/Projects/robotenv_ws/install/_setup_util.py")
+   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/Projects/robotenv_ws/install" TYPE PROGRAM FILES "/home/user/Projects/robotenv_ws/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install" TYPE PROGRAM FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/Projects/robotenv_ws/install/env.sh")
+   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/Projects/robotenv_ws/install" TYPE PROGRAM FILES "/home/user/Projects/robotenv_ws/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install" TYPE PROGRAM FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/Projects/robotenv_ws/install/setup.bash;/home/user/Projects/robotenv_ws/install/local_setup.bash")
+   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/setup.bash;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/Projects/robotenv_ws/install" TYPE FILE FILES
-    "/home/user/Projects/robotenv_ws/build/catkin_generated/installspace/setup.bash"
-    "/home/user/Projects/robotenv_ws/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install" TYPE FILE FILES
+    "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/catkin_generated/installspace/setup.bash"
+    "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/Projects/robotenv_ws/install/setup.sh;/home/user/Projects/robotenv_ws/install/local_setup.sh")
+   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/setup.sh;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/Projects/robotenv_ws/install" TYPE FILE FILES
-    "/home/user/Projects/robotenv_ws/build/catkin_generated/installspace/setup.sh"
-    "/home/user/Projects/robotenv_ws/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install" TYPE FILE FILES
+    "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/catkin_generated/installspace/setup.sh"
+    "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/Projects/robotenv_ws/install/setup.zsh;/home/user/Projects/robotenv_ws/install/local_setup.zsh")
+   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/setup.zsh;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/Projects/robotenv_ws/install" TYPE FILE FILES
-    "/home/user/Projects/robotenv_ws/build/catkin_generated/installspace/setup.zsh"
-    "/home/user/Projects/robotenv_ws/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install" TYPE FILE FILES
+    "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/catkin_generated/installspace/setup.zsh"
+    "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/user/Projects/robotenv_ws/install/.rosinstall")
+   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/user/Projects/robotenv_ws/install" TYPE FILE FILES "/home/user/Projects/robotenv_ws/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install" TYPE FILE FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/user/Projects/robotenv_ws/build/gtest/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_resources/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/pick_and_place_env/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_support/cmake_install.cmake")
-  include("/home/user/Projects/robotenv_ws/build/phoxi_camera/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/gtest/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_5_90_moveit_config/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_test/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_resources/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/iai_kinect2_opencv4/iai_kinect2/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/pick_and_place_env/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_support/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/iai_kinect2_opencv4/kinect2_registration/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/iai_kinect2_opencv4/kinect2_bridge/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/iai_kinect2_opencv4/kinect2_calibration/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/iai_kinect2_opencv4/kinect2_viewer/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera/cmake_install.cmake")
+  include("/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver/cmake_install.cmake")
 
 endif()
 
@@ -147,5 +155,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/user/Projects/robotenv_ws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

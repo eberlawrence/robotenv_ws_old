@@ -1,8 +1,8 @@
-# Install script for directory: /home/user/Projects/robotenv_ws/src/pick_and_place_env
+# Install script for directory: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/pick_and_place_env
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/user/Projects/robotenv_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,17 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/Projects/robotenv_ws/build/pick_and_place_env/catkin_generated/installspace/pick_and_place_env.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/pick_and_place_env/catkin_generated/installspace/pick_and_place_env.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pick_and_place_env/cmake" TYPE FILE FILES
-    "/home/user/Projects/robotenv_ws/build/pick_and_place_env/catkin_generated/installspace/pick_and_place_envConfig.cmake"
-    "/home/user/Projects/robotenv_ws/build/pick_and_place_env/catkin_generated/installspace/pick_and_place_envConfig-version.cmake"
+    "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/pick_and_place_env/catkin_generated/installspace/pick_and_place_envConfig.cmake"
+    "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/pick_and_place_env/catkin_generated/installspace/pick_and_place_envConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pick_and_place_env" TYPE FILE FILES "/home/user/Projects/robotenv_ws/src/pick_and_place_env/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pick_and_place_env" TYPE FILE FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/pick_and_place_env/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pick_and_place_env" TYPE PROGRAM FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/pick_and_place_env/catkin_generated/installspace/robot_test.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pick_and_place_env" TYPE PROGRAM FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/pick_and_place_env/catkin_generated/installspace/gripper_control.py")
 endif()
 

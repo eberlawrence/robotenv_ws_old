@@ -7,4 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/user/Projects/robotenv_ws/build'
+export PWD='/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build'
+export PYTHONPATH="/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages:$PYTHONPATH"

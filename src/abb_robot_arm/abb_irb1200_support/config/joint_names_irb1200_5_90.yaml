@@ -6,6 +6,6 @@ controller_joint_names:
     "joint_4",
     "joint_5",
     "joint_6",
-    "joint_l_finger",
-    "joint_r_finger",
+    # "joint_l_finger",
+    # "joint_r_finger",
   ]

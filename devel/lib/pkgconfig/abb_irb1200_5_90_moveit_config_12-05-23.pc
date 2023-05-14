@@ -1,0 +1,8 @@
+prefix=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel
+
+Name: abb_irb1200_5_90_moveit_config_12-05-23
+Description: Description of abb_irb1200_5_90_moveit_config_12-05-23
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

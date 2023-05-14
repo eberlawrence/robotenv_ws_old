@@ -6,26 +6,26 @@
     <link name="conveyor_base">
       <visual>
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Base.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Base.dae" scale = "0.001 0.001 0.001"/>
         </geometry>
         <!-- <xacro:colour_gray_30p/> -->
       </visual>
       <collision name="collision">
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Base.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Base.dae" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
     <link name="conveyor_belt">
       <visual>
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Belt.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Belt.dae" scale = "0.001 0.001 0.001"/>
         </geometry>
         <!-- <xacro:colour_white/> -->
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Belt.stl" scale = "0.001 0.001 0.001"/>
+          <mesh filename="package://pick_and_place_env/meshes/Conveyor_Belt.dae" scale = "0.001 0.001 0.001"/>
         </geometry>
       </collision>
     </link>
@@ -34,7 +34,7 @@
     <!--  -->
     <!-- joint list -->
     <joint name="base_to_conveyor_base_joint" type="fixed">
-      <origin xyz="0.77 1.295 0" rpy="0 0 ${-pi/2}"/>
+      <origin xyz="0.495 1.020 0" rpy="0 0 ${-pi/2}"/>
       <axis xyz="0 0 1"/>
       <parent link="base"/>
       <child link="conveyor_base"/>

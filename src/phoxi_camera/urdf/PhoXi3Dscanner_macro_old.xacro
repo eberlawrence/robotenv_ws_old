@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
+  <xacro:macro name = "PhoXi3Dscanner">
+    <!-- link list -->
+    <link name="camera_stand">
+      <visual>
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_stand.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+        <!-- <xacro:colour_gray_70p/> -->
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/collision/camera_stand_collision.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="camera_support">
+      <visual>
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_support.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+        <!-- <xacro:colour_gray_50p/> -->
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://abb_irb1200_support/meshes/irb1200_5_90/visual/camera_support.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="PhoXi3Dscanner">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 1.5707 0" />
+        <geometry>
+          <mesh filename="package://phoxi_camera/meshes/visual/PhoXi_S.f.STL" scale = "0.001 0.001 0.001"/>
+        </geometry>
+        <xacro:colour_gray_30p/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 1.5707 0" />
+        <geometry>
+          <mesh filename="package://phoxi_camera/meshes/collision/PhoXi_S.c.STL" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="PhoXi3Dscanner_sensor"/>
+    <!-- end of link list -->
+    <!--  -->
+    <!--  -->
+    <!-- joint list -->
+    <joint name="base_to_camera_stand_joint" type="fixed">
+      <origin xyz="1.260 0.640 0" rpy="0 0 ${pi}"/> <!-- front view to the fence: X: right | Y: Forward | Z: Up-->
+      <axis xyz="0 0 1"/>
+      <parent link="Base"/>
+      <child link="camera_stand"/>
+    </joint>
+    <joint name="camera_stand_to_camera_support_joint" type="fixed">
+      <origin xyz="0.515 0.04 1.202" rpy="0 0 ${pi}"/>
+      <axis xyz="0 0 1"/>
+      <parent link="camera_stand"/>
+      <child link="camera_support"/>
+    </joint>
+    <joint name="camera_support_to_PhoXi3Dscanner_joint" type="fixed">
+      <origin xyz="0 0.04 0.02" rpy="${pi} 0 ${-pi/2}"/>
+      <axis xyz="0 0 1"/>
+      <parent link="camera_support"/>
+      <child link="PhoXi3Dscanner"/>
+    </joint>
+    <joint name="PhoXi3Dscanner_to_PhoXi3Dscanner_sensor_joint" type="fixed">
+      <origin xyz="-0.1173845315 0.0299 0.005287752939" rpy="0 ${-15.45/180*pi} ${pi}" />
+      <parent link="PhoXi3Dscanner"/>
+      <child link="PhoXi3Dscanner_sensor"/>
+    </joint>
+    <!-- end of joint list -->
+  </xacro:macro>
+</robot>

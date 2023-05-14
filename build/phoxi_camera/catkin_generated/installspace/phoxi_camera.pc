@@ -1,4 +1,4 @@
-prefix=/home/user/Projects/robotenv_ws/install
+prefix=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install
 
 Name: phoxi_camera
 Description: Description of phoxi_camera

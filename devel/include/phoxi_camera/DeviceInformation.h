@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -45,22 +45,22 @@ struct DeviceInformation_
 
 
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _name_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _name_type;
   _name_type name;
 
    typedef  ::phoxi_camera::DeviceType_<ContainerAllocator>  _type_type;
   _type_type type;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _hwIdentification_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _hwIdentification_type;
   _hwIdentification_type hwIdentification;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _IPaddress_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _IPaddress_type;
   _IPaddress_type IPaddress;
 
    typedef  ::phoxi_camera::DeviceConnectionStatus_<ContainerAllocator>  _status_type;
   _status_type status;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _firmwareVersion_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _firmwareVersion_type;
   _firmwareVersion_type firmwareVersion;
 
 
@@ -240,19 +240,19 @@ struct Printer< ::phoxi_camera::DeviceInformation_<ContainerAllocator> >
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::phoxi_camera::DeviceInformation_<ContainerAllocator>& v)
   {
     s << indent << "name: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.name);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.name);
     s << indent << "type: ";
     s << std::endl;
     Printer< ::phoxi_camera::DeviceType_<ContainerAllocator> >::stream(s, indent + "  ", v.type);
     s << indent << "hwIdentification: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.hwIdentification);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.hwIdentification);
     s << indent << "IPaddress: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.IPaddress);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.IPaddress);
     s << indent << "status: ";
     s << std::endl;
     Printer< ::phoxi_camera::DeviceConnectionStatus_<ContainerAllocator> >::stream(s, indent + "  ", v.status);
     s << indent << "firmwareVersion: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.firmwareVersion);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.firmwareVersion);
   }
 };
 

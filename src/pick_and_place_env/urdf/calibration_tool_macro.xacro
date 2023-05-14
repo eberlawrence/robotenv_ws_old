@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find abb_resources)/urdf/common_materials.xacro"/>
+  <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
+  <xacro:macro name="calibration_tool">
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- Gripper link list -->
+    <link name="link_flange_1">
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/Flange_01.dae" scale = "0.01 0.01 0.01"/>
+        </geometry>
+        <xacro:colour_orange />
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/Flange_01.dae" scale = "0.01 0.01 0.01"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.137"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+    </link>
+    <link name="link_calib_tool">
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/Calib_tool.dae" scale = "0.01 0.01 0.01"/>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/Calib_tool.dae" scale = "0.01 0.01 0.01"/>
+        </geometry>
+        <xacro:colour_orange />
+      </collision>
+      <inertial>
+        <mass value="0.137"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+    </link>
+    <!-- End of gripper link list -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- Gripper joint list -->
+    <joint type="fixed" name="joint_flange_1">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="tool0"/>
+      <child link="link_flange_1"/>
+    </joint>
+    <joint type="fixed" name="joint_calib_tool">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="link_flange_1"/>
+      <child link="link_calib_tool"/>
+    </joint>
+    <!-- End of gripper joint list -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+  </xacro:macro>
+</robot>

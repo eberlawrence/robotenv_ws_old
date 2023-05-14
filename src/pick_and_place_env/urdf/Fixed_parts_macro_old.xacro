@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
+  <xacro:macro name = "Fixed_parts">
+    <!-- link list -->
+    <link name="wall">
+      <visual>
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/wall.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/wall.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="window">
+      <visual>
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/window.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <!-- <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/window.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision> -->
+    </link>
+    <link name="IRC5_controller_support">
+      <visual>
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/controller_support.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/controller_support.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="IRC5_controller">
+      <visual>
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/controller.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/controller.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="circuit_panel_box">
+      <visual>
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/circuit_panel_box.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/circuit_panel_box.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="circuit_panel_switch_yellow">
+      <visual>
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/circuit_panel_switch_yellow.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/circuit_panel_switch_yellow.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="circuit_panel_switch_red">
+      <visual>
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/circuit_panel_switch_red.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/circuit_panel_switch_red.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="fences">
+      <visual>
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/fences.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/fences.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="posts">
+      <visual>
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/posts.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/posts.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <link name="pads">
+      <visual>
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/pads.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://pick_and_place_env/meshes/New_meshes/pads.dae" scale = "0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+    <!-- end of link list -->
+    <!--  -->
+    <!--  -->
+    <!-- joint list -->
+    <joint name="base_to_wall_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="base"/>
+      <child link="wall"/>
+    </joint>
+    <joint name="base_to_window_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="base"/>
+      <child link="window"/>
+    </joint>
+    <joint name="base_to_IRC5_controller_support_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="base"/>
+      <child link="IRC5_controller_support"/>
+    </joint>
+    <joint name="base_to_IRC5_controller_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="base"/>
+      <child link="IRC5_controller"/>
+    </joint>
+    <joint name="base_to_circuit_panel_box_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="base"/>
+      <child link="circuit_panel_box"/>
+    </joint>
+    <joint name="base_to_circuit_panel_switch_yellow_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="base"/>
+      <child link="circuit_panel_switch_yellow"/>
+    </joint>
+    <joint name="base_to_circuit_panel_switch_red_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="base"/>
+      <child link="circuit_panel_switch_red"/>
+    </joint>
+    <joint name="base_to_fences_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="base"/>
+      <child link="fences"/>
+    </joint>
+    <joint name="base_to_posts_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="base"/>
+      <child link="posts"/>
+    </joint>
+    <joint name="base_to_pads_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="base"/>
+      <child link="pads"/>
+    </joint>
+    <!-- end of joint list -->
+  </xacro:macro>
+</robot>

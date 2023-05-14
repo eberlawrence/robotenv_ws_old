@@ -67,14 +67,14 @@ set(abb_irb1200_support_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(abb_irb1200_support_SOURCE_PREFIX /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_support)
-  set(abb_irb1200_support_DEVEL_PREFIX /home/user/Projects/robotenv_ws/devel)
+  set(abb_irb1200_support_SOURCE_PREFIX /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_irb1200_support)
+  set(abb_irb1200_support_DEVEL_PREFIX /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel)
   set(abb_irb1200_support_INSTALL_PREFIX "")
   set(abb_irb1200_support_PREFIX ${abb_irb1200_support_DEVEL_PREFIX})
 else()
   set(abb_irb1200_support_SOURCE_PREFIX "")
   set(abb_irb1200_support_DEVEL_PREFIX "")
-  set(abb_irb1200_support_INSTALL_PREFIX /home/user/Projects/robotenv_ws/install)
+  set(abb_irb1200_support_INSTALL_PREFIX /home/user/Projects/ROS_WORKSPACES/robotenv_ws/install)
   set(abb_irb1200_support_PREFIX ${abb_irb1200_support_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/user/Projects/robotenv_ws/install/lib;/home/user/Projects/robotenv_ws/devel/lib;/home/user/Projects/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/lib;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

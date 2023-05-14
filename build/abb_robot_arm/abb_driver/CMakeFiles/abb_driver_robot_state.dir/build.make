@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Projects/robotenv_ws/src
+CMAKE_SOURCE_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Projects/robotenv_ws/build
+CMAKE_BINARY_DIR = /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build
 
 # Include any dependencies generated for this target.
 include abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/depend.make
@@ -58,30 +58,30 @@ include abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/progress.
 include abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/flags.make
 
 abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.o: abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/flags.make
-abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.o: /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_robot_state_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.o"
-	cd /home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.o -c /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_robot_state_node.cpp
+abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.o: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_robot_state_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.o"
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.o -c /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_robot_state_node.cpp
 
 abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.i"
-	cd /home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_robot_state_node.cpp > CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.i
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_robot_state_node.cpp > CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.i
 
 abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.s"
-	cd /home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_robot_state_node.cpp -o CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.s
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_robot_state_node.cpp -o CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.s
 
 abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.o: abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/flags.make
-abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.o: /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.o"
-	cd /home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.o -c /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_utils.cpp
+abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.o: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.o"
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.o -c /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_utils.cpp
 
 abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.i"
-	cd /home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_utils.cpp > CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.i
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_utils.cpp > CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.i
 
 abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.s"
-	cd /home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_utils.cpp -o CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.s
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver/src/abb_utils.cpp -o CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.s
 
 # Object files for target abb_driver_robot_state
 abb_driver_robot_state_OBJECTS = \
@@ -91,59 +91,59 @@ abb_driver_robot_state_OBJECTS = \
 # External object files for target abb_driver_robot_state
 abb_driver_robot_state_EXTERNAL_OBJECTS =
 
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.o
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.o
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/build.make
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libindustrial_robot_client_dummy.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libactionlib.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libindustrial_utils.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/liburdf.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libclass_loader.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libroslib.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librospack.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libpython3.8.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librosconsole_bridge.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libsimple_message_dummy.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libroscpp.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librosconsole.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librostime.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libcpp_common.so
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state: abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Projects/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state"
-	cd /home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/abb_driver_robot_state.dir/link.txt --verbose=$(VERBOSE)
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_robot_state_node.cpp.o
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/src/abb_utils.cpp.o
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/build.make
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libindustrial_robot_client_dummy.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libactionlib.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libindustrial_utils.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/liburdf.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libclass_loader.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libroslib.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librospack.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librosconsole_bridge.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libsimple_message_dummy.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libroscpp.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librosconsole.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/librostime.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /opt/ros/noetic/lib/libcpp_common.so
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state: abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state"
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/abb_driver_robot_state.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/build: /home/user/Projects/robotenv_ws/devel/lib/abb_driver/robot_state
+abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/build: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/robot_state
 
 .PHONY : abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/build
 
 abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/clean:
-	cd /home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver && $(CMAKE_COMMAND) -P CMakeFiles/abb_driver_robot_state.dir/cmake_clean.cmake
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver && $(CMAKE_COMMAND) -P CMakeFiles/abb_driver_robot_state.dir/cmake_clean.cmake
 .PHONY : abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/clean
 
 abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/depend:
-	cd /home/user/Projects/robotenv_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/robotenv_ws/src /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver /home/user/Projects/robotenv_ws/build /home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver /home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_driver /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/depend
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/user/Projects/robotenv_ws/devel/lib/libphoxi_camera_PhoXi_Interface.pdb"
-  "/home/user/Projects/robotenv_ws/devel/lib/libphoxi_camera_PhoXi_Interface.so"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/libphoxi_camera_PhoXi_Interface.pdb"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/libphoxi_camera_PhoXi_Interface.so"
   "CMakeFiles/phoxi_camera_PhoXi_Interface.dir/src/PhoXiInterface.cpp.o"
 )
 

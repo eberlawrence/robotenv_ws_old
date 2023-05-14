@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -38,7 +38,7 @@ struct SaveFrameRequest_
    typedef int64_t _in_type;
   _in_type in;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _path_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _path_type;
   _path_type path;
 
 
@@ -195,7 +195,7 @@ struct Printer< ::phoxi_camera::SaveFrameRequest_<ContainerAllocator> >
     s << indent << "in: ";
     Printer<int64_t>::stream(s, indent + "  ", v.in);
     s << indent << "path: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.path);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.path);
   }
 };
 

@@ -1,4 +1,4 @@
-prefix=/home/user/Projects/robotenv_ws/install
+prefix=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install
 
 Name: pick_and_place_env
 Description: Description of pick_and_place_env

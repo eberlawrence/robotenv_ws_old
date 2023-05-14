@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -38,10 +38,10 @@ struct GetSupportedCapturingModesResponse_
 
 
 
-   typedef std::vector< ::phoxi_camera::PhoXiSize_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::phoxi_camera::PhoXiSize_<ContainerAllocator> >::other >  _supported_capturing_modes_type;
+   typedef std::vector< ::phoxi_camera::PhoXiSize_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::phoxi_camera::PhoXiSize_<ContainerAllocator> >> _supported_capturing_modes_type;
   _supported_capturing_modes_type supported_capturing_modes;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _message_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _message_type;
   _message_type message;
 
    typedef uint8_t _success_type;
@@ -215,7 +215,7 @@ struct Printer< ::phoxi_camera::GetSupportedCapturingModesResponse_<ContainerAll
       Printer< ::phoxi_camera::PhoXiSize_<ContainerAllocator> >::stream(s, indent + "    ", v.supported_capturing_modes[i]);
     }
     s << indent << "message: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.message);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.message);
     s << indent << "success: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.success);
   }

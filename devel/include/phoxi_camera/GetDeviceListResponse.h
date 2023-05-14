@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -45,13 +45,13 @@ struct GetDeviceListResponse_
    typedef int64_t _len_type;
   _len_type len;
 
-   typedef std::vector<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > , typename ContainerAllocator::template rebind<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::other >  _out_type;
+   typedef std::vector<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>> _out_type;
   _out_type out;
 
-   typedef std::vector< ::phoxi_camera::DeviceInformation_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::phoxi_camera::DeviceInformation_<ContainerAllocator> >::other >  _device_information_list_type;
+   typedef std::vector< ::phoxi_camera::DeviceInformation_<ContainerAllocator> , typename std::allocator_traits<ContainerAllocator>::template rebind_alloc< ::phoxi_camera::DeviceInformation_<ContainerAllocator> >> _device_information_list_type;
   _device_information_list_type device_information_list;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _message_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _message_type;
   _message_type message;
 
    typedef uint8_t _success_type;
@@ -245,7 +245,7 @@ struct Printer< ::phoxi_camera::GetDeviceListResponse_<ContainerAllocator> >
     for (size_t i = 0; i < v.out.size(); ++i)
     {
       s << indent << "  out[" << i << "]: ";
-      Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.out[i]);
+      Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.out[i]);
     }
     s << indent << "device_information_list[]" << std::endl;
     for (size_t i = 0; i < v.device_information_list.size(); ++i)
@@ -256,7 +256,7 @@ struct Printer< ::phoxi_camera::GetDeviceListResponse_<ContainerAllocator> >
       Printer< ::phoxi_camera::DeviceInformation_<ContainerAllocator> >::stream(s, indent + "    ", v.device_information_list[i]);
     }
     s << indent << "message: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.message);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.message);
     s << indent << "success: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.success);
   }

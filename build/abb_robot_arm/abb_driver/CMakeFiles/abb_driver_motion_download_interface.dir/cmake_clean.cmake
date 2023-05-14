@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/user/Projects/robotenv_ws/devel/lib/abb_driver/motion_download_interface"
-  "/home/user/Projects/robotenv_ws/devel/lib/abb_driver/motion_download_interface.pdb"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/motion_download_interface"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/abb_driver/motion_download_interface.pdb"
   "CMakeFiles/abb_driver_motion_download_interface.dir/src/abb_joint_downloader_node.cpp.o"
   "CMakeFiles/abb_driver_motion_download_interface.dir/src/abb_utils.cpp.o"
 )
