@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Install script for directory: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_current
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/install")
+=======
+# Install script for directory: /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_current
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "/home/user/Projects/robotenv_ws/install")
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +46,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+<<<<<<< HEAD
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_current/catkin_generated/installspace/abb_irb1200_moveit_config.pc")
 endif()
 
@@ -45,10 +54,20 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_irb1200_moveit_config/cmake" TYPE FILE FILES
     "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_current/catkin_generated/installspace/abb_irb1200_moveit_configConfig.cmake"
     "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_current/catkin_generated/installspace/abb_irb1200_moveit_configConfig-version.cmake"
+=======
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_current/catkin_generated/installspace/abb_irb1200_moveit_config_current.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_irb1200_moveit_config_current/cmake" TYPE FILE FILES
+    "/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_current/catkin_generated/installspace/abb_irb1200_moveit_config_currentConfig.cmake"
+    "/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_current/catkin_generated/installspace/abb_irb1200_moveit_config_currentConfig-version.cmake"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+<<<<<<< HEAD
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_irb1200_moveit_config" TYPE FILE FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_current/package.xml")
 endif()
 
@@ -58,5 +77,16 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_irb1200_moveit_config" TYPE DIRECTORY FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_current/config")
+=======
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_irb1200_moveit_config_current" TYPE FILE FILES "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_current/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_irb1200_moveit_config_current" TYPE DIRECTORY FILES "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_current/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_irb1200_moveit_config_current" TYPE DIRECTORY FILES "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_current/config")
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 endif()
 

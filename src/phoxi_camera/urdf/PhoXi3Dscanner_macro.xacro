@@ -15,7 +15,11 @@
       <collision>
         <!-- <origin xyz="0 0 0" rpy="0 1.5707 0" /> -->
         <geometry>
+<<<<<<< HEAD
           <mesh filename="package://phoxi_camera/meshes/collision/PhoXi3DScannerSCollision.stl" scale = "0.001 0.001 0.001"/>
+=======
+          <mesh filename="package://phoxi_camera/meshes/collision/PhoXi_S.c.STL" scale = "0.001 0.001 0.001"/>
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
         </geometry>
         <xacro:collision_colour />
       </collision>
@@ -25,9 +29,16 @@
     <!--  -->
     <!--  -->
     <!-- joint list -->
+<<<<<<< HEAD
     <joint name="camera_support_to_PhoXi3Dscanner_joint" type="fixed">
       <origin xyz="0.6096 -0.49705 1.2235" rpy="${pi/2} 0 ${-pi/2}"/>
       <parent link="ConveyorAndSupportComponents"/>
+=======
+    
+    <joint name="camera_support_to_PhoXi3Dscanner_joint" type="fixed">
+      <origin xyz="0.745 0.640 1.231" rpy="${pi} 0 ${-pi/2}"/>
+      <parent link="Fixed_frame"/>
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
       <child link="PhoXi3Dscanner"/>
     </joint>
     <joint name="PhoXi3Dscanner_to_PhoXi3Dscanner_sensor_joint" type="fixed">

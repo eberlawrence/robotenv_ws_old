@@ -154,7 +154,11 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< HEAD
     foreach(path /home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/lib;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib;/opt/ros/noetic/lib)
+=======
+    foreach(path /home/user/Projects/robotenv_ws/install/lib;/home/user/Projects/robotenv_ws/devel/lib;/opt/ros/noetic/lib)
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

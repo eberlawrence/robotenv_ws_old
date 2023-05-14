@@ -12,7 +12,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "abb_robot_arm/abb_driver/catkin_generated/ordered_paths.cmake"
   "abb_robot_arm/abb_driver/catkin_generated/package.cmake"
+<<<<<<< HEAD
   "abb_robot_arm/abb_irb1200_5_90_moveit_config/catkin_generated/package.cmake"
+=======
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   "abb_robot_arm/abb_irb1200_moveit_config/catkin_generated/package.cmake"
   "abb_robot_arm/abb_irb1200_moveit_config_test/catkin_generated/package.cmake"
   "abb_robot_arm/abb_irb1200_support/catkin_generated/package.cmake"
@@ -37,6 +40,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "phoxi_camera/cmake/phoxi_camera-genmsg.cmake"
   "pick_and_place_env/catkin_generated/ordered_paths.cmake"
   "pick_and_place_env/catkin_generated/package.cmake"
+<<<<<<< HEAD
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/share/kinect2_bridge/cmake/kinect2_bridgeConfig-version.cmake"
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/share/kinect2_bridge/cmake/kinect2_bridgeConfig.cmake"
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/share/kinect2_registration/cmake/kinect2_registration.cmake"
@@ -78,6 +82,25 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/pick_and_place_env/scripts/robot_test.py"
   "/home/user/freenect2/lib/cmake/freenect2/freenect2Config.cmake"
   "/home/user/freenect2/lib/cmake/freenect2/freenect2ConfigVersion.cmake"
+=======
+  "/home/user/Projects/robotenv_ws/devel/share/phoxi_camera/cmake/phoxi_camera-msg-paths.cmake"
+  "/home/user/Projects/robotenv_ws/src/CMakeLists.txt"
+  "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/CMakeLists.txt"
+  "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_driver/package.xml"
+  "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config/CMakeLists.txt"
+  "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config/package.xml"
+  "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_test/CMakeLists.txt"
+  "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_test/package.xml"
+  "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_support/CMakeLists.txt"
+  "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_support/package.xml"
+  "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_resources/CMakeLists.txt"
+  "/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_resources/package.xml"
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/CMakeLists.txt"
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/package.xml"
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/setup.py"
+  "/home/user/Projects/robotenv_ws/src/pick_and_place_env/CMakeLists.txt"
+  "/home/user/Projects/robotenv_ws/src/pick_and_place_env/package.xml"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   "/opt/Photoneo/PhoXiControl-1.4.1/PhoXiConfig.cmake"
   "/opt/Photoneo/PhoXiControl-1.4.1/cmake/PhoXiConfig_gcc.cmake"
   "/opt/ros/noetic/share/actionlib/cmake/actionlib-msg-extras.cmake"
@@ -157,6 +180,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/noetic/share/class_loader/cmake/class_loader-extras.cmake"
   "/opt/ros/noetic/share/class_loader/cmake/class_loaderConfig-version.cmake"
   "/opt/ros/noetic/share/class_loader/cmake/class_loaderConfig.cmake"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/cmake_modules/cmake/cmake_modules-extras.cmake"
   "/opt/ros/noetic/share/cmake_modules/cmake/cmake_modulesConfig-version.cmake"
   "/opt/ros/noetic/share/cmake_modules/cmake/cmake_modulesConfig.cmake"
@@ -164,6 +188,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/noetic/share/compressed_depth_image_transport/cmake/compressed_depth_image_transportConfig.cmake"
   "/opt/ros/noetic/share/compressed_image_transport/cmake/compressed_image_transportConfig-version.cmake"
   "/opt/ros/noetic/share/compressed_image_transport/cmake/compressed_image_transportConfig.cmake"
+=======
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   "/opt/ros/noetic/share/control_msgs/cmake/control_msgs-msg-extras.cmake"
   "/opt/ros/noetic/share/control_msgs/cmake/control_msgsConfig-version.cmake"
   "/opt/ros/noetic/share/control_msgs/cmake/control_msgsConfig.cmake"
@@ -212,8 +238,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/noetic/share/geometry_msgs/cmake/geometry_msgs-msg-paths.cmake"
   "/opt/ros/noetic/share/geometry_msgs/cmake/geometry_msgsConfig-version.cmake"
   "/opt/ros/noetic/share/geometry_msgs/cmake/geometry_msgsConfig.cmake"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/image_transport/cmake/image_transportConfig-version.cmake"
   "/opt/ros/noetic/share/image_transport/cmake/image_transportConfig.cmake"
+=======
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   "/opt/ros/noetic/share/industrial_msgs/cmake/industrial_msgs-msg-extras.cmake"
   "/opt/ros/noetic/share/industrial_msgs/cmake/industrial_msgsConfig-version.cmake"
   "/opt/ros/noetic/share/industrial_msgs/cmake/industrial_msgsConfig.cmake"
@@ -669,7 +698,14 @@ set(CMAKE_DEPEND_INFO_FILES
   "phoxi_camera/CMakeFiles/phoxi_camera_Ros_Interface.dir/DependInfo.cmake"
   "phoxi_camera/CMakeFiles/phoxi_camera.dir/DependInfo.cmake"
   "phoxi_camera/CMakeFiles/run_tests_phoxi_camera_rostest_test_launch_phoxi_api_interface_class.test.dir/DependInfo.cmake"
+<<<<<<< HEAD
   "phoxi_camera/CMakeFiles/_run_tests_phoxi_camera.dir/DependInfo.cmake"
+=======
+  "phoxi_camera/CMakeFiles/run_tests_phoxi_camera_rostest.dir/DependInfo.cmake"
+  "phoxi_camera/CMakeFiles/_run_tests_phoxi_camera_rostest_test_launch_phoxi_camera_ros_interfaces_exist.test.dir/DependInfo.cmake"
+  "phoxi_camera/CMakeFiles/_run_tests_phoxi_camera_rostest_test_launch_phoxi_api_interface_class.test.dir/DependInfo.cmake"
+  "phoxi_camera/CMakeFiles/_phoxi_camera_generate_messages_check_deps_DeviceConnectionStatus.dir/DependInfo.cmake"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   "abb_robot_arm/abb_driver/CMakeFiles/abb_driver_motion_download_interface.dir/DependInfo.cmake"
   "abb_robot_arm/abb_driver/CMakeFiles/abb_driver_robot_state.dir/DependInfo.cmake"
   "abb_robot_arm/abb_driver/CMakeFiles/industrial_msgs_generate_messages_py.dir/DependInfo.cmake"

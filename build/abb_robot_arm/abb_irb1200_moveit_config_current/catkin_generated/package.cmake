@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 set(_CATKIN_CURRENT_PACKAGE "abb_irb1200_moveit_config")
 set(abb_irb1200_moveit_config_VERSION "0.2.0")
 set(abb_irb1200_moveit_config_MAINTAINER "Andrew Short <andrewjshort@gmail.com>, Levi Armstrong (Southwest Research Institute) <levi.armstrong@swri.org>")
@@ -14,3 +15,21 @@ set(abb_irb1200_moveit_config_URL_WEBSITE "http://wiki.ros.org/abb_irb1200_5_90_
 set(abb_irb1200_moveit_config_URL_BUGTRACKER "https://github.com/ros-industrial/abb_experimental/issues")
 set(abb_irb1200_moveit_config_URL_REPOSITORY "https://github.com/ros-industrial/abb_experimental")
 set(abb_irb1200_moveit_config_DEPRECATED "")
+=======
+set(_CATKIN_CURRENT_PACKAGE "abb_irb1200_moveit_config_current")
+set(abb_irb1200_moveit_config_current_VERSION "0.2.0")
+set(abb_irb1200_moveit_config_current_MAINTAINER "Andrew Short <andrewjshort@gmail.com>, Levi Armstrong (Southwest Research Institute) <levi.armstrong@swri.org>")
+set(abb_irb1200_moveit_config_current_PACKAGE_FORMAT "2")
+set(abb_irb1200_moveit_config_current_BUILD_DEPENDS )
+set(abb_irb1200_moveit_config_current_BUILD_EXPORT_DEPENDS )
+set(abb_irb1200_moveit_config_current_BUILDTOOL_DEPENDS "catkin")
+set(abb_irb1200_moveit_config_current_BUILDTOOL_EXPORT_DEPENDS )
+set(abb_irb1200_moveit_config_current_EXEC_DEPENDS "abb_irb1200_support" "industrial_robot_simulator" "joint_state_publisher" "moveit_fake_controller_manager" "moveit_kinematics" "moveit_planners_ompl" "moveit_ros_move_group" "moveit_ros_visualization" "moveit_simple_controller_manager" "robot_state_publisher" "rviz" "trac_ik_kinematics_plugin" "xacro")
+set(abb_irb1200_moveit_config_current_RUN_DEPENDS "abb_irb1200_support" "industrial_robot_simulator" "joint_state_publisher" "moveit_fake_controller_manager" "moveit_kinematics" "moveit_planners_ompl" "moveit_ros_move_group" "moveit_ros_visualization" "moveit_simple_controller_manager" "robot_state_publisher" "rviz" "trac_ik_kinematics_plugin" "xacro")
+set(abb_irb1200_moveit_config_current_TEST_DEPENDS )
+set(abb_irb1200_moveit_config_current_DOC_DEPENDS )
+set(abb_irb1200_moveit_config_current_URL_WEBSITE "http://wiki.ros.org/abb_irb1200_5_90_moveit_config")
+set(abb_irb1200_moveit_config_current_URL_BUGTRACKER "https://github.com/ros-industrial/abb_experimental/issues")
+set(abb_irb1200_moveit_config_current_URL_REPOSITORY "https://github.com/ros-industrial/abb_experimental")
+set(abb_irb1200_moveit_config_current_DEPRECATED "")
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4

@@ -2144,6 +2144,7 @@ phoxi_camera_gencfg/fast:
 .PHONY : phoxi_camera_gencfg/fast
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named pcl_msgs_generate_messages_py
 
 # Build rule for target.
@@ -2209,6 +2210,8 @@ _run_tests_phoxi_camera/fast:
 .PHONY : _run_tests_phoxi_camera/fast
 
 #=============================================================================
+=======
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 # Target rules for targets named abb_driver_motion_download_interface
 
 # Build rule for target.
@@ -2598,7 +2601,14 @@ help:
 	@echo "... phoxi_camera_Ros_Interface"
 	@echo "... phoxi_camera"
 	@echo "... run_tests_phoxi_camera_rostest_test_launch_phoxi_api_interface_class.test"
+<<<<<<< HEAD
 	@echo "... _run_tests_phoxi_camera"
+=======
+	@echo "... run_tests_phoxi_camera_rostest"
+	@echo "... _run_tests_phoxi_camera_rostest_test_launch_phoxi_camera_ros_interfaces_exist.test"
+	@echo "... _run_tests_phoxi_camera_rostest_test_launch_phoxi_api_interface_class.test"
+	@echo "... _phoxi_camera_generate_messages_check_deps_DeviceConnectionStatus"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 	@echo "... abb_driver_motion_download_interface"
 	@echo "... abb_driver_robot_state"
 	@echo "... industrial_msgs_generate_messages_py"

@@ -34,7 +34,11 @@ add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" "phoxi_camera/DeviceConnectionStatus:phoxi_camera/DeviceType"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg" "phoxi_camera/DeviceConnectionStatus:phoxi_camera/DeviceType"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 )
 
 get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/Deprecated/Empty.srv" NAME_WE)
@@ -64,7 +68,11 @@ add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" "phoxi_camera/DeviceType:phoxi_camera/DeviceConnectionStatus:phoxi_camera/DeviceInformation"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" "phoxi_camera/DeviceConnectionStatus:phoxi_camera/DeviceType:phoxi_camera/DeviceInformation"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 )
 
 get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
@@ -104,7 +112,11 @@ add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
+<<<<<<< HEAD
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" "geometry_msgs/Vector3:geometry_msgs/Quaternion:geometry_msgs/Transform"
+=======
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv" "geometry_msgs/Transform:geometry_msgs/Vector3:geometry_msgs/Quaternion"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 )
 
 get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetString.srv" NAME_WE)
@@ -139,7 +151,11 @@ _generate_msg_cpp(phoxi_camera
 _generate_msg_cpp(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+=======
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 
@@ -177,7 +193,11 @@ _generate_srv_cpp(phoxi_camera
 _generate_srv_cpp(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+=======
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
@@ -225,7 +245,11 @@ _generate_srv_cpp(phoxi_camera
 _generate_srv_cpp(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
@@ -316,7 +340,11 @@ _generate_msg_eus(phoxi_camera
 _generate_msg_eus(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+=======
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 
@@ -354,7 +382,11 @@ _generate_srv_eus(phoxi_camera
 _generate_srv_eus(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+=======
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
@@ -402,7 +434,11 @@ _generate_srv_eus(phoxi_camera
 _generate_srv_eus(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
@@ -493,7 +529,11 @@ _generate_msg_lisp(phoxi_camera
 _generate_msg_lisp(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+=======
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 
@@ -531,7 +571,11 @@ _generate_srv_lisp(phoxi_camera
 _generate_srv_lisp(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+=======
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
@@ -579,7 +623,11 @@ _generate_srv_lisp(phoxi_camera
 _generate_srv_lisp(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
@@ -670,7 +718,11 @@ _generate_msg_nodejs(phoxi_camera
 _generate_msg_nodejs(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+=======
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 
@@ -708,7 +760,11 @@ _generate_srv_nodejs(phoxi_camera
 _generate_srv_nodejs(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+=======
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
@@ -756,7 +812,11 @@ _generate_srv_nodejs(phoxi_camera
 _generate_srv_nodejs(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
@@ -847,7 +907,11 @@ _generate_msg_py(phoxi_camera
 _generate_msg_py(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+=======
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 
@@ -885,7 +949,11 @@ _generate_srv_py(phoxi_camera
 _generate_srv_py(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+=======
+  "/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera
@@ -933,7 +1001,11 @@ _generate_srv_py(phoxi_camera
 _generate_srv_py(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/SetTransformationMatrix.srv"
   "${MSG_I_FLAGS}"
+<<<<<<< HEAD
   "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg"
+=======
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Transform.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera

@@ -9,7 +9,11 @@
   <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro --inorder '$(find pick_and_place_env)/urdf/environment.xacro'"/>
 
   <!-- The semantic description that corresponds to the URDF -->
+<<<<<<< HEAD
     <param name="$(arg robot_description)_semantic" textfile="$(find abb_irb1200_5_90_moveit_config)/config/abb_irb1200_5_90.srdf" />
+=======
+    <param name="$(arg robot_description)_semantic" textfile="$(find abb_irb1200_moveit_config)/config/abb_irb1200_5_90.srdf" />
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">

@@ -735,7 +735,23 @@ abb_irb1200_5_90_moveit_config_BINARY_DIR:STATIC=/home/user/Projects/ROS_WORKSPA
 abb_irb1200_5_90_moveit_config_SOURCE_DIR:STATIC=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_irb1200_5_90_moveit_config
 
 //Value Computed by CMake
+<<<<<<< HEAD
 abb_irb1200_moveit_config_BINARY_DIR:STATIC=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config
+=======
+abb_irb1200_moveit_config_current_BINARY_DIR:STATIC=/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_current
+
+//Value Computed by CMake
+abb_irb1200_moveit_config_current_SOURCE_DIR:STATIC=/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_current
+
+//Value Computed by CMake
+abb_irb1200_moveit_config_test_BINARY_DIR:STATIC=/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_moveit_config_test
+
+//Value Computed by CMake
+abb_irb1200_moveit_config_test_SOURCE_DIR:STATIC=/home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_test
+
+//Value Computed by CMake
+abb_irb1200_support_BINARY_DIR:STATIC=/home/user/Projects/robotenv_ws/build/abb_robot_arm/abb_irb1200_support
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 
 //Value Computed by CMake
 abb_irb1200_moveit_config_SOURCE_DIR:STATIC=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config
@@ -1286,7 +1302,11 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
+<<<<<<< HEAD
 CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
+=======
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
+>>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
