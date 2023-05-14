@@ -67,23 +67,14 @@ set(abb_irb1200_moveit_config_test_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-<<<<<<< HEAD
   set(abb_irb1200_moveit_config_test_SOURCE_PREFIX /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_test)
   set(abb_irb1200_moveit_config_test_DEVEL_PREFIX /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel)
-=======
-  set(abb_irb1200_moveit_config_test_SOURCE_PREFIX /home/user/Projects/robotenv_ws/src/abb_robot_arm/abb_irb1200_moveit_config_test)
-  set(abb_irb1200_moveit_config_test_DEVEL_PREFIX /home/user/Projects/robotenv_ws/devel)
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   set(abb_irb1200_moveit_config_test_INSTALL_PREFIX "")
   set(abb_irb1200_moveit_config_test_PREFIX ${abb_irb1200_moveit_config_test_DEVEL_PREFIX})
 else()
   set(abb_irb1200_moveit_config_test_SOURCE_PREFIX "")
   set(abb_irb1200_moveit_config_test_DEVEL_PREFIX "")
-<<<<<<< HEAD
   set(abb_irb1200_moveit_config_test_INSTALL_PREFIX /home/user/Projects/ROS_WORKSPACES/robotenv_ws/install)
-=======
-  set(abb_irb1200_moveit_config_test_INSTALL_PREFIX /home/user/Projects/robotenv_ws/install)
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   set(abb_irb1200_moveit_config_test_PREFIX ${abb_irb1200_moveit_config_test_INSTALL_PREFIX})
 endif()
 
@@ -163,11 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-<<<<<<< HEAD
     foreach(path /home/user/Projects/ROS_WORKSPACES/robotenv_ws/install/lib;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib;/opt/ros/noetic/lib)
-=======
-    foreach(path /home/user/Projects/robotenv_ws/install/lib;/home/user/Projects/robotenv_ws/devel/lib;/opt/ros/noetic/lib)
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

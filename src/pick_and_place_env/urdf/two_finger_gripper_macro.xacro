@@ -13,10 +13,6 @@
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/New_meshes/Flange_01.dae" scale = "0.01 0.01 0.01"/>
         </geometry>
-<<<<<<< HEAD
-=======
-        <xacro:colour_orange />
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
       </visual>
       <collision name="collision">
         <geometry>
@@ -34,10 +30,6 @@
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/New_meshes/Flange_02.dae" scale = "0.01 0.01 0.01"/>
         </geometry>
-<<<<<<< HEAD
-=======
-        <xacro:colour_white />
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
       </visual>
       <collision name="collision">
         <geometry>

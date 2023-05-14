@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 prefix=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel
-=======
-prefix=/home/user/Projects/robotenv_ws/devel
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
 
 Name: abb_irb1200_moveit_config_test
 Description: Description of abb_irb1200_moveit_config_test

@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-<<<<<<< HEAD
   <xacro:include filename="$(find pick_and_place_env)/urdf/colours/specific_colours.xacro"/>
   <xacro:macro name = "Fixed_parts">
     <!-- link list -->
@@ -8,20 +7,10 @@
       <visual>
         <geometry>
           <mesh filename="package://pick_and_place_env/meshes/updated_meshes/RoomComponents.dae" scale = "0.01 0.01 0.01"/>
-=======
-  <xacro:include filename="$(find pick_and_place_env)/urdf/colours/colours.xacro"/>
-  <xacro:macro name = "Fixed_parts">
-    <!-- link list -->
-    <link name="Fixed_frame">
-      <visual>
-        <geometry>
-          <mesh filename="package://pick_and_place_env/meshes/New_meshes/Fixed_parts_pillot_line.dae" scale = "0.01 0.01 0.01"/>
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
         </geometry>
       </visual>
       <collision name="collision">
         <geometry>
-<<<<<<< HEAD
           <mesh filename="package://pick_and_place_env/meshes/updated_meshes/RoomCollision.stl" scale = "0.001 0.001 0.001"/>
         </geometry>
         <xacro:collision_colour />
@@ -70,12 +59,5 @@
       <child link="ConveyorAndSupportComponents"/>
     </joint>
     <!-- end of joint list -->
-=======
-          <mesh filename="package://pick_and_place_env/meshes/New_meshes/Fixed_parts_pillot_line.dae" scale = "0.01 0.01 0.01"/>
-        </geometry>
-      </collision>
-    </link>
-    <!-- end of link list -->
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
   </xacro:macro>
 </robot>

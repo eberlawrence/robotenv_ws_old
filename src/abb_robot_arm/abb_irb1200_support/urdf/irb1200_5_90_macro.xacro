@@ -149,17 +149,10 @@
     <!--  -->
     <!--  -->
     <!-- JOINT BASE_LINK -->
-<<<<<<< HEAD
     <joint name="Room_to_base_link" type="fixed" >
       <origin xyz="0 0 0.726" rpy="0 0 0"/>
       <axis xyz="0 0 0"/>
       <parent link="RoomComponents"/>
-=======
-    <joint type="fixed" name="base_link">
-      <origin xyz="0 0 0.726" rpy="0 0 0"/>
-      <axis xyz="0 0 0"/>
-      <parent link="Fixed_frame"/>
->>>>>>> 111af121142ca18e335d97f9c4da8065ef0ffcb4
       <child link="base_link"/>
     </joint>
     <!-- JOINT 1 -->
