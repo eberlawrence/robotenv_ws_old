@@ -1,3 +1,4 @@
 *.dae filter=lfs diff=lfs merge=lfs -text
 src/pick_and_place_env/meshes/*/*.dae filter=lfs diff=lfs merge=lfs -text
 src/pick_and_place_env/meshes/updated_meshes/ConveyorAndSupportComponents.dae filter=lfs diff=lfs merge=lfs -text
+src/pick_and_place_env/meshes/New_meshes/Fixed_parts_pillot_line.dae filter=lfs diff=lfs merge=lfs -text
