@@ -64,7 +64,7 @@ add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" NAME_WE)
 add_custom_target(_phoxi_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" "phoxi_camera/DeviceType:phoxi_camera/DeviceConnectionStatus:phoxi_camera/DeviceInformation"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "phoxi_camera" "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv" "phoxi_camera/DeviceInformation:phoxi_camera/DeviceType:phoxi_camera/DeviceConnectionStatus"
 )
 
 get_filename_component(_filename "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetBool.srv" NAME_WE)
@@ -177,7 +177,7 @@ _generate_srv_cpp(phoxi_camera
 _generate_srv_cpp(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_cpp(phoxi_camera
@@ -354,7 +354,7 @@ _generate_srv_eus(phoxi_camera
 _generate_srv_eus(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_eus(phoxi_camera
@@ -531,7 +531,7 @@ _generate_srv_lisp(phoxi_camera
 _generate_srv_lisp(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_lisp(phoxi_camera
@@ -708,7 +708,7 @@ _generate_srv_nodejs(phoxi_camera
 _generate_srv_nodejs(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_nodejs(phoxi_camera
@@ -885,7 +885,7 @@ _generate_srv_py(phoxi_camera
 _generate_srv_py(phoxi_camera
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv"
   "${MSG_I_FLAGS}"
-  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg;/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/phoxi_camera
 )
 _generate_srv_py(phoxi_camera

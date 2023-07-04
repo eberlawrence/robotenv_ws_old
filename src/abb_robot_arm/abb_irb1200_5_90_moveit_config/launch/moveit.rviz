@@ -1,16 +1,16 @@
 Panels:
   - Class: rviz/Displays
-    Help Height: 70
+    Help Height: 0
     Name: Displays
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /Grid1
-        - /MotionPlanning1
         - /MotionPlanning1/Scene Robot1
         - /MotionPlanning1/Planning Request1
+        - /PointCloud21
+        - /TF1
       Splitter Ratio: 0.5170649886131287
-    Tree Height: 186
+    Tree Height: 814
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -45,7 +45,7 @@ Visualization Manager:
       Value: true
     - Acceleration_Scaling_Factor: 1
       Class: moveit_rviz_plugin/MotionPlanning
-      Enabled: true
+      Enabled: false
       Move Group Namespace: ""
       MoveIt_Allow_Approximate_IK: false
       MoveIt_Allow_External_Program: false
@@ -299,8 +299,110 @@ Visualization Manager:
         Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
-      Value: true
+      Value: false
       Velocity_Scaling_Factor: 1
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: z
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: true
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.0010000000474974513
+      Style: Points
+      Topic: /phoxi_camera/pointcloud
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Class: rviz/Axes
+      Enabled: true
+      Length: 1
+      Name: Axes
+      Radius: 0.10000000149011612
+      Reference Frame: <Fixed Frame>
+      Show Trail: false
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        ConveyorAndSupportComponents:
+          Value: true
+        PhoXi3Dscanner:
+          Value: true
+        PhoXi3Dscanner_sensor:
+          Value: true
+        RoomComponents:
+          Value: true
+        SafetyAndControllerComponents:
+          Value: true
+        base_link:
+          Value: true
+        link_1:
+          Value: true
+        link_2:
+          Value: true
+        link_3:
+          Value: true
+        link_4:
+          Value: true
+        link_5:
+          Value: true
+        link_6:
+          Value: true
+        link_flange_1:
+          Value: true
+        link_flange_2:
+          Value: true
+        link_tool_base:
+          Value: true
+        tool0:
+          Value: true
+      Marker Alpha: 1
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        RoomComponents:
+          ConveyorAndSupportComponents:
+            PhoXi3Dscanner:
+              PhoXi3Dscanner_sensor:
+                {}
+          SafetyAndControllerComponents:
+            {}
+          base_link:
+            link_1:
+              link_2:
+                link_3:
+                  link_4:
+                    link_5:
+                      link_6:
+                        tool0:
+                          link_flange_1:
+                            link_flange_2:
+                              link_tool_base:
+                                {}
+      Update Interval: 0
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -317,7 +419,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.93544864654541
+      Distance: 2.7550179958343506
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -325,22 +427,22 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.5338107347488403
-        Y: 0.3961600363254547
-        Z: -0.0932072252035141
+        X: 0.8169648051261902
+        Y: -0.06333989650011063
+        Z: -0.1055961400270462
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.7797967195510864
+      Pitch: 0.6397967338562012
       Target Frame: base_link
-      Yaw: 4.864935874938965
+      Yaw: 4.344919204711914
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 964
+  Height: 965
   Help:
     collapsed: false
   Hide Left Dock: false
@@ -349,9 +451,9 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000200000000000001f30000036afc0200000007fb000000100044006900730070006c006100790073010000003d0000013d000000c900fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000020f000001d60000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670100000180000002270000017d00fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff000000160000001600000001000001050000036bfc0200000001fb0000000a00560069006500770073000000003d0000036b000000a400ffffff000001c70000036a00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000200000000000001f30000036bfc0200000007fb000000100044006900730070006c006100790073010000003d0000036b000000c900fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000020f000001d60000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670000000220000001880000017d00fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff000000160000001600000001000001050000036bfc0200000001fb0000000a00560069006500770073000000003d0000036b000000a400ffffff000001f00000036b00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: true
-  Width: 960
+  Width: 1001
   X: 0
   Y: 27

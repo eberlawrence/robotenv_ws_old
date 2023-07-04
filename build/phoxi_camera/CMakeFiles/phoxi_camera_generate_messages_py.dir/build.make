@@ -125,9 +125,9 @@ phoxi_camera/CMakeFiles/phoxi_camera_generate_messages_py: /home/user/Projects/R
 
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv
+/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceType.msg
 /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceConnectionStatus.msg
-/home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv/_GetDeviceList.py: /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg/DeviceInformation.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python code from SRV phoxi_camera/GetDeviceList"
 	cd /home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/srv/GetDeviceList.srv -Iphoxi_camera:/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p phoxi_camera -o /home/user/Projects/ROS_WORKSPACES/robotenv_ws/devel/lib/python3/dist-packages/phoxi_camera/srv
 

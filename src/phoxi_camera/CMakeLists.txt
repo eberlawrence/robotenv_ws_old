@@ -151,6 +151,12 @@ target_link_libraries( ${PROJECT_NAME}
         ${PROJECT_NAME}_Ros_Interface
 )
 
+catkin_install_python(PROGRAMS
+  scripts/phoxi_camera_test.py
+  scripts/get_poitcloud_topic.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 install(TARGETS ${PROJECT_NAME}_Ros_Interface ${PROJECT_NAME}_PhoXi_Interface
         ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
         LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}

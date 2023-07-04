@@ -44,6 +44,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/abb_robot_arm/abb_resources/package.xml"
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/CMakeLists.txt"
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/package.xml"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/scripts/get_poitcloud_topic.py"
+  "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/scripts/phoxi_camera_test.py"
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/phoxi_camera/setup.py"
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/pick_and_place_env/CMakeLists.txt"
   "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/src/pick_and_place_env/package.xml"

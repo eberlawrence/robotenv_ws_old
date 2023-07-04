@@ -134,6 +134,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/phoxi_camera" TYPE PROGRAM FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera/catkin_generated/installspace/phoxi_camera_test.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/phoxi_camera" TYPE PROGRAM FILES "/home/user/Projects/ROS_WORKSPACES/robotenv_ws/build/phoxi_camera/catkin_generated/installspace/get_poitcloud_topic.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libphoxi_camera_Ros_Interface.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libphoxi_camera_Ros_Interface.so")
     file(RPATH_CHECK
