@@ -10,8 +10,8 @@ def callback(data):
     print("oi3")
     # Accessing the point cloud data
     points = pc2.read_points(data, field_names=("x", "y", "z"), skip_nans=True)
-    points_array = np.array(list(points))
-    print(points_array)
+    points_array = np.array(list(points))[300000:400000]
+    print(points_array[50:100])
     print(points_array.shape)
     print(points_array.max())
     print(points_array.min())
